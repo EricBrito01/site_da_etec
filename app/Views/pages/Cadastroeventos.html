@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/eventos.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link href="css/bootstrap-datepicker.css "rel="stylesheet"/>
+    <script src="js/bootstrap-datepicker.min.js"></script> 
+    <script src="js/bootstrap-datepicker.pt-BR.min.js"></script>
+
+    <title>CADASTRO EVENTOS</title>
+</head>
+<body>
+	
+	<section class="content" >
+
+		<div class="contato" >
+
+			<h1>Cadastro de Eventos </h1>
+			<form method="POST" action="#">
+				Tipo do evento: <input for="nome-event" class="field" name="nome-event" placeholder="EX: Dia Dos Professores" size="35">
+
+				<label name="txt-area">Descrição do Evento </label>
+				<textarea class="field" name="mesage" cols="55" rows="8" placeholder="Digite a descrição aqui...">				
+				</textarea>
+
+					
+					<br>
+					<br>
+
+				<div class="form-group">
+					<label name="dt-inicio" style="text-align: left; "  class="col-sm-12 control-label">Data Inicio: </label>
+					<div class="col-sm-12">
+						<div style="width: 200px; left: 100px; top: -32px; margin-left: 15px" class="input-group date">
+							<input name="dt-in" type="text" class="form-control" id="exemplo" >
+							<div class="input-group-addon">
+								<span class="glyphicon glyphicon-th"></span>
+							</div>
+						</div>
+
+					</div>
+				  </div>
+
+				  <div class="form-group">
+					<label name="dt-final" style="text-align: left; " class="col-sm-12 control-label">Data Final: </label>
+					<div class="col-sm-12">
+						<div style="width: 200px; left: 100px; top: -32px; margin-left: 15px"class="input-group date">	
+						<input  name="dt-fi" type="text" class="form-control" id="exemplo_02" >
+							<div class="input-group-addon">
+								<span class="glyphicon glyphicon-th"></span>
+							</div>
+						</div>
+
+					</div>
+				  </div>
+	<button id="Cadastrar" name="btn-cadastrar" type="button" class="btn btn-success">Cadastrar</button>
+		<button id="Limpar" name="btn-limpar" type="reset" class="btn btn-danger">Limpar</button>
+
+		</div>
+
+
+
+		
+	</section>
+</form>
+<script type="text/javascript">
+			$('#exemplo').datepicker({	
+				format: "dd/mm/yyyy",	
+				language: "pt-BR",
+				startDate: '+0d',
+			});
+			$('#exemplo_02').datepicker({	
+				format: "dd/mm/yyyy",	
+				language: "pt-BR",
+				startDate: '+0d',
+			});
+		</script>
+
+</body>
+</html>

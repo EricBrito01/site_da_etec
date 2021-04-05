@@ -33,7 +33,7 @@
                         <h2>Bem vindo à Etec Ermelinda Giannini Teixeira </h2>
                     </div> <!-- section title -->
                     <div class="about-cont">
-                        <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet . Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt  mauris. <br> </p>
+                        <p>Seja bem vindo a Etec Ermelinda Giannini Teixeira, um colegio tecnico de qualidade com professores (ivan nao) qualificados e que dedicam sua vida para ensinar os alunos. <br> </p>
                     </div>
                 </div> <!-- about cont -->
                 <div class="col-lg-7">
@@ -102,7 +102,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="singel-teachers mt-30 text-center">
                         <div class="image">
-                            <img src="images/professores/clelia2.jpeg" alt="Teachers">
+                            <img src="images/professores/cleilia2.jpg" alt="Teachers">
                         </div>
                         <div class="cont">
                             <h6>Clelia Cristina</h6>
@@ -113,7 +113,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="singel-teachers mt-30 text-center">
                         <div class="image">
-                            <img src="images/professores/silnei.jpeg" alt="Teachers">
+                            <img src="images/professores/silnei.jpg" alt="Teachers">
                         </div>
                         <div class="cont">
                             <h6>Silnei Santos</h6>
@@ -124,7 +124,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="singel-teachers mt-30 text-center">
                         <div class="image">
-                            <img src="images/professores/bruno.jpeg" alt="Teachers">
+                            <img src="images/professores/bruno.jpg" alt="Teachers">
                         </div>
                         <div class="cont">
                             <h6>Bruno Nascimento</h6>

@@ -1,5 +1,6 @@
 
 
+
     <!--====== SLIDER PART START ======-->
     
     <section id="slider-part" class="slider-active">
@@ -8,11 +9,11 @@
                 <div class="row">
                     <div class="col-xl-7 col-lg-9">
                         <div class="slider-cont">
-                            <h1 data-animation="bounceInLeft" data-delay="1s">Choose the right theme for education</h1>
-                            <p data-animation="fadeInUp" data-delay="1.3s">Donec vitae sapien ut libearo venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt  Sed fringilla mauri amet nibh.</p>
+                            <h1 data-animation="bounceInLeft" data-delay="1s">BEM VINDO(A) A ETEC ERMELINDA GIANNINI TEIXEIRA</h1>
+                            <p data-animation="fadeInUp" data-delay="1.3s">CONFIRA OS NOSSOS CURSOS, DIREÇÃO ACADEMICA, RESULTADO DO VESTIBULINHO, E MUITO MAIS</p>
                             <ul>
-                                <li><a data-animation="fadeInUp" data-delay="1.6s" class="main-btn" href="#">Read More</a></li>
-                                <li><a data-animation="fadeInUp" data-delay="1.9s" class="main-btn main-btn-2" href="#">Get Started</a></li>
+                                <li><a data-animation="fadeInUp" data-delay="1.6s" class="main-btn" href="http://localhost/etec/public/about">SOBRE A ESCOLA</a></li>
+
                             </ul>
                         </div>
                     </div>
@@ -25,11 +26,10 @@
                 <div class="row">
                     <div class="col-xl-7 col-lg-9">
                         <div class="slider-cont">
-                            <h1 data-animation="bounceInLeft" data-delay="1s">Choose the right theme for education</h1>
-                            <p data-animation="fadeInUp" data-delay="1.3s">Donec vitae sapien ut libearo venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt  Sed fringilla mauri amet nibh.</p>
+                            <h1 data-animation="bounceInLeft" data-delay="1s">COM OS MELHORES PROFESSORES E DIRETORES PARA VOCE</h1>
+                            <p data-animation="fadeInUp" data-delay="1.3s">VENHA VER A NOSSA DIREÇÃO ACADEMICA!</p>
                             <ul>
                                 <li><a data-animation="fadeInUp" data-delay="1.6s" class="main-btn" href="#">Read More</a></li>
-                                <li><a data-animation="fadeInUp" data-delay="1.9s" class="main-btn main-btn-2" href="#">Get Started</a></li>
                             </ul>
                         </div>
                     </div>
@@ -42,8 +42,8 @@
                 <div class="row">
                     <div class="col-xl-7 col-lg-9">
                         <div class="slider-cont">
-                            <h1 data-animation="bounceInLeft" data-delay="1s">Choose the right theme for education</h1>
-                            <p data-animation="fadeInUp" data-delay="1.3s">Donec vitae sapien ut libearo venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt  Sed fringilla mauri amet nibh.</p>
+                            <h1 data-animation="bounceInLeft" data-delay="1s">VENHA TURBINAR O SEU CURRICULO !</h1>
+                            <p data-animation="fadeInUp" data-delay="1.3s">COM OS NOSSOS CURSOS PROFISSIONALIZANTES VOCE PODE TURBINAR SEU CURRICULO!</p>
                             <ul>
                                 <li><a data-animation="fadeInUp" data-delay="1.6s" class="main-btn" href="#">Read More</a></li>
                                 <li><a data-animation="fadeInUp" data-delay="1.9s" class="main-btn main-btn-2" href="#">Get Started</a></li>
@@ -71,7 +71,7 @@
                     <div class="col-lg-6 offset-lg-1 col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-8 offset-2">
                         <div class="row category-slied mt-40">
                             <div class="col-lg-4">
-                                <a href="#">
+                                <a href="https://www.vestibulinhoetec.com.br/unidades-cursos/curso.asp?c=1500">
                                     <span class="singel-category text-center color-1">
                                         <span class="icon">
                                             <img src="images/all-icon/ctg-1.png" alt="Icon">
@@ -85,7 +85,7 @@
                             </div>
             
                             <div class="col-lg-4">
-                                <a href="#">
+                                <a href="https://www.vestibulinhoetec.com.br/unidades-cursos/curso.asp?c=514">
                                     <span class="singel-category text-center color-3">
                                         <span class="icon">
                                             <img style='width:95px'src="images/all-icon/icone-rh.png" alt="Icon">
@@ -98,7 +98,7 @@
                                 </a>
                             </div>
                             <div class="col-lg-4">
-                                <a href="#">
+                                <a href="https://www.vestibulinhoetec.com.br/unidades-cursos/curso.asp?c=1326">
                                     <span class="singel-category text-center color-2">
                                         <span class="icon">
                                             <img src="images/all-icon/ctg-2.png" alt="Icon">
@@ -111,7 +111,7 @@
                                 </a>
                             </div>
                             <div class="col-lg-4">
-                                <a href="#">
+                                <a href="https://www.vestibulinhoetec.com.br/unidades-cursos/curso.asp?c=1545">
                                     <span class="singel-category text-center color-1">
                                         <span class="icon">
                                             <img src="images/all-icon/ctg-1.png" alt="Icon">
@@ -123,29 +123,7 @@
                                     </span> <!-- singel category -->
                                 </a>
                             </div>
-                            <div class="col-lg-4">
-                                <a href="#">
-                                    <span class="singel-category text-center color-2">
-                                        <span class="icon">
-                                            <img src="images/all-icon/ctg-2.png" alt="Icon">
-                                        </span>
-                                        <span class="cont">
-                                        </span>
-                                    </span> <!-- singel category -->
-                                </a>
-                            </div>
-                            <div class="col-lg-4">
-                                <a href="#">
-                                    <span class="singel-category text-center color-3">
-                                        <span class="icon">
-                                            <img src="images/all-icon/ctg-3.png" alt="Icon">
-                                        </span>
-                                        <span class="cont">
-                                            <span>Literature</span>
-                                        </span>
-                                    </span> <!-- singel category -->
-                                </a>
-                            </div>
+                            
                         </div> <!-- category slied -->
                     </div>
                 </div> <!-- row -->
@@ -170,7 +148,7 @@
                             Em 19 de setembro de 2008, a Etec tornou-se unidade autônoma, contando na Direção com a Professora Roseli Barna Christo de Camargo, com Lisete do Carmo Cardoso Messias na Diretoria de Serviços e Selma Rizzi na Secretaria Acadêmica.
                             Em novembro de 2008, passamos a oferecer, logística, informática e o ensino médio. Atualmente, contamos com uma classe de ensino médio no período matutino, informática (tarde e noite) e logística (tarde e noite, sendo duas classes do primeiro módulo à noite).
                             </p>
-                        <a href="about.html" class="main-btn mt-55">Ler Mais</a>
+                        <a href="http://localhost:8081/etec/public/about" class="main-btn mt-55">Ler Mais</a>
                     </div>
                 </div> <!-- about cont -->
                 <div class="col-lg-6 offset-lg-1">
@@ -362,7 +340,7 @@
    
     <!--====== VIDEO FEATURE PART START ======-->
     
-    <section id="video-feature" class="bg_cover pt-60 pb-110" style="background-image: url(images/bg-1.jpg)">
+    <section id="video-feature" class="bg_cover pt-60 pb-110" style="background-image: url(images/bg_elvis.jpg)">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 order-last order-lg-first">
@@ -382,8 +360,7 @@
                                         <img src="images/all-icon/f-1.png" alt="icon">
                                     </div>
                                     <div class="cont">
-                                        <h4>Global Certificate</h4>
-                                        <p>Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem quibibendum sem nibhutis.</p>
+                                        <h4>Fique ligado nos recebimentos de diploma</h4>
                                     </div>
                                 </div> <!-- singel feature -->
                             </li>
@@ -393,8 +370,8 @@
                                         <img src="images/all-icon/f-2.png" alt="icon">
                                     </div>
                                     <div class="cont">
-                                        <h4>Alumni Support</h4>
-                                        <p>Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem quibibendum sem nibhutis.</p>
+                                        <h4>Mostragem de alunos e sala de aulas</h4>
+                                      
                                     </div>
                                 </div> <!-- singel feature -->
                             </li>
@@ -404,8 +381,8 @@
                                         <img src="images/all-icon/f-3.png" alt="icon">
                                     </div>
                                     <div class="cont">
-                                        <h4>Books & Library</h4>
-                                        <p>Gravida nibh vel velit auctor aliquetn auci elit cons solliazcitudirem sem quibibendum sem nibhutis.</p>
+                                        <h4>Projetos de Trabalho de Conclusão de curso</h4>
+                
                                     </div>
                                 </div> <!-- singel feature -->
                             </li>
@@ -486,98 +463,7 @@
     
     <!--====== TEASTIMONIAL PART ENDS ======-->
    
-    <!--====== NEWS PART START ======-->
     
-    <section id="news-part" class="pt-115 pb-110">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-title pb-50">
-                        <h5>Etec News</h5>
-                        <h2>Ultimas Noticias</h2>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="singel-news mt-30">
-                        <div class="news-thum pb-25">
-                            <img src="images/news/n-1.jpg" alt="News">
-                        </div>
-                        <div class="news-cont">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-calendar"></i>2 December 2018 </a></li>
-                                <li><a href="#"> <span>By</span> Adam linn</a></li>
-                            </ul>
-                            <a href="blog-singel.html"><h3>Tips to grade high cgpa in university life</h3></a>
-                            <p>Lorem ipsum gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt .</p>
-                        </div>
-                    </div> <!-- singel news -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="singel-news news-list">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="news-thum mt-30">
-                                    <img src="images/news/ns-1.jpg" alt="News">
-                                </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <div class="news-cont mt-30">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-calendar"></i>2 December 2018 </a></li>
-                                        <li><a href="#"> <span>By</span> Adam linn</a></li>
-                                    </ul>
-                                    <a href="blog-singel.html"><h3>Intellectual communication</h3></a>
-                                    <p>Gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons  vel.</p>
-                                </div>
-                            </div>
-                        </div> <!-- row -->
-                    </div> <!-- singel news -->
-                    <div class="singel-news news-list">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="news-thum mt-30">
-                                    <img src="images/news/ns-2.jpg" alt="News">
-                                </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <div class="news-cont mt-30">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-calendar"></i>2 December 2018 </a></li>
-                                        <li><a href="#"> <span>By</span> Adam linn</a></li>
-                                    </ul>
-                                    <a href="blog-singel.html"><h3>Study makes you perfect</h3></a>
-                                    <p>Gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons  vel.</p>
-                                </div>
-                            </div>
-                        </div> <!-- row -->
-                    </div> <!-- singel news -->
-                    <div class="singel-news news-list">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="news-thum mt-30">
-                                    <img src="images/news/ns-3.jpg" alt="News">
-                                </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <div class="news-cont mt-30">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-calendar"></i>2 December 2018 </a></li>
-                                        <li><a href="#"> <span>By</span> Adam linn</a></li>
-                                    </ul>
-                                    <a href="blog-singel.html"><h3>Technology edcution is now....</h3></a>
-                                    <p>Gravida nibh vel velit auctor aliquetn sollicitudirem quibibendum auci elit cons  vel.</p>
-                                </div>
-                            </div>
-                        </div> <!-- row -->
-                    </div> <!-- singel news -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== NEWS PART ENDS ======-->
    
     <!--====== PATNAR LOGO PART START ======-->
     

@@ -12,7 +12,7 @@
     <title>ETEC ERMELINDA GIANNINI TEIXEIRA</title>
     
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="images/all-icon/eicon.ico" type="image/png">
 
     <!--====== Slick css ======-->
     <link rel="stylesheet" href="css/slick.css">
@@ -162,7 +162,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-4">
                         <div class="logo">
-                            <a href="index-2.html">
+                            <a href="http://localhost:8081/etec/public">
                                 <img src="images/etec.png" alt="Logo" width="150">
                             </a>
                         </div>
@@ -201,26 +201,26 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item">
-                                        <a class="active" href="http://localhost/etec/public/">Home</a>
+                                        <a class="active" href="http://localhost:8081/etec/public/">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="http://localhost/etec/public/about">Sobre Nós</a>
+                                        <a href="http://localhost:8081/etec/public/about">Sobre Nós</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="http://localhost/etec/public/courses">Cursos</a>
+                                        <a href="http://localhost:8081/etec/public/courses">Cursos</a>
                                         <ul class="sub-menu">
                                             <li><a href="courses.html">Courses</a></li>
                                             <li><a href="courses-singel.html">Course Singel</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="http://localhost/etec/public/events">Eventos</a>
+                                        <a href="http://localhost:8081/etec/public/events">Eventos</a>
                                         <ul class="sub-menu">
                                             <li><a href="events.html">Eventos</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="Parcerias.html">Parcerias</a>
+                                        <a href="http://localhost:8081/etec/public/parcerias">Parcerias</a>
                                         <ul class="sub-menu">
                                             <li><a href="">Parcerias</a></li>
                                         </ul>
@@ -235,7 +235,7 @@
                                         <a href="Secretaria.html">Secretaria</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="http://localhost/etec/public/contact">Contato</a>
+                                        <a href="http://localhost:8081/etec/public/contact">Contato</a>
                                     </li>
                                 </ul>
                             </div>

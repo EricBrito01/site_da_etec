@@ -11,4 +11,11 @@ class Courses extends BaseController
         echo view('pages/courses');
         echo view('Templates/footer');
     }
+
+    // public function ds()
+    // {
+    //     echo view('Templates/header');
+    //     echo view('pages/ds');
+    //     echo view('Templates/footer');
+    // }
 }

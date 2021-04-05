@@ -33,7 +33,7 @@ class Database extends Config
 	public $default = [
 		'DSN'      => '',
 		'hostname' => 'localhost',
-		'username' => 'adauto',
+		'username' => 'root',
 		'password' => '200101',
 		'database' => 'bd_etec',
 		'DBDriver' => 'MySQLi',
@@ -47,7 +47,7 @@ class Database extends Config
 		'compress' => false,
 		'strictOn' => false,
 		'failover' => [],
-		'port'     => 3306,
+		'port'     => 3308,
 	];
 
 	/**

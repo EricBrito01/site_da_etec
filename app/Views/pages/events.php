@@ -24,7 +24,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="page-banner-cont">
-                        <h2>Events</h2>
+                        <h2>Eventos</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -50,12 +50,11 @@
                         <div class="col-lg-6">
                    <div class="singel-event-list mt-30">
                        <div class="event-thum">
-                           <img src="images/event/e-4.jpg" alt="Event">
+                           <img src="images/event.jpg" alt="Event">
                        </div>
                        <div class="event-cont">
                            <span><i class="fa fa-calendar"></i> <?php echo $newsItem['eventos_data']?></span>
-                            <a href="events-singel.html"><h4><?php echo $newsItem['eventos_titulo']?></h4></a>
-                            <span><i class="fa fa-clock-o"></i><?php echo $newsItem['eventos_horario']?></span>
+                            <h4><?php echo $newsItem['eventos_titulo']?></h4><br>
                             <span><i class="fa fa-map-marker"></i> <?php echo $newsItem['eventos_local']?></span>
                             <p><?php echo $newsItem['eventos_informacoes']?></p>
                        </div>
