@@ -33,7 +33,7 @@
                         <h2>Bem vindo à Etec Ermelinda Giannini Teixeira </h2>
                     </div> <!-- section title -->
                     <div class="about-cont">
-                        <p>Seja bem vindo a Etec Ermelinda Giannini Teixeira, um colegio tecnico de qualidade com professores (ivan nao) qualificados e que dedicam sua vida para ensinar os alunos. <br> </p>
+                        <p>Seja bem vindo a Etec Ermelinda Giannini Teixeira, um colegio tecnico de qualidade com professores qualificados e que dedicam seu tempo para ensinar os alunos a como atuar no mercado de trabalho. <br> </p>
                     </div>
                 </div> <!-- about cont -->
                 <div class="col-lg-7">

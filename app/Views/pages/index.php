@@ -29,7 +29,7 @@
                             <h1 data-animation="bounceInLeft" data-delay="1s">COM OS MELHORES PROFESSORES E DIRETORES PARA VOCE</h1>
                             <p data-animation="fadeInUp" data-delay="1.3s">VENHA VER A NOSSA DIREÇÃO ACADEMICA!</p>
                             <ul>
-                                <li><a data-animation="fadeInUp" data-delay="1.6s" class="main-btn" href="#">Read More</a></li>
+                                <li><a data-animation="fadeInUp" data-delay="1.6s" class="main-btn" href="./about">Read More</a></li>
                             </ul>
                         </div>
                     </div>
@@ -44,10 +44,7 @@
                         <div class="slider-cont">
                             <h1 data-animation="bounceInLeft" data-delay="1s">VENHA TURBINAR O SEU CURRICULO !</h1>
                             <p data-animation="fadeInUp" data-delay="1.3s">COM OS NOSSOS CURSOS PROFISSIONALIZANTES VOCE PODE TURBINAR SEU CURRICULO!</p>
-                            <ul>
-                                <li><a data-animation="fadeInUp" data-delay="1.6s" class="main-btn" href="#">Read More</a></li>
-                                <li><a data-animation="fadeInUp" data-delay="1.9s" class="main-btn main-btn-2" href="#">Get Started</a></li>
-                            </ul>
+                            
                         </div>
                     </div>
                 </div> <!-- row -->
@@ -292,7 +289,7 @@
                             <a href="courses-singel.html"><h4>Modular - Recursos humanos</h4></a>
                             <div class="course-teacher">
                                 <div class="thum">
-                                    <a href="#"><img src="images/professores/fernando.jpeg" alt="teacher"></a>
+                                    <a href="#"><img src="images/professores/fernando.jpg" alt="teacher"></a>
                                 </div>
                                 <div class="name">
                                     <h6>Coordenador - Luiz Fernando</h6>
@@ -329,7 +326,7 @@
                             </div>
                         </div>
                     </div> <!-- singel course -->
-                </div>
+                </div><br><br><br>
                 
                 
             </div> <!-- course slied -->
@@ -399,70 +396,7 @@
    
    
    
-    <!--====== TEASTIMONIAL PART START ======-->
     
-    <section id="testimonial" class="bg_cover pt-115 pb-115" data-overlay="8" style="background-image: url(images/bg-2.jpg)">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-title pb-40">
-                        <h5>Depoimento dos alunos</h5>
-                        <h2>O que eles falaram:</h2>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row testimonial-slied mt-40">
-                <div class="col-lg-6">
-                    <div class="singel-testimonial">
-                        <div class="testimonial-thum">
-                            <img src="images/testimonial/t-1.jpg" alt="Testimonial">
-                            <div class="quote">
-                                <i class="fa fa-quote-right"></i>
-                            </div>
-                        </div>
-                        <div class="testimonial-cont">
-                            <p>Aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet sem nibh id elit sollicitudirem </p>
-                            <h6>Andressa Cristina</h6>
-                            <span>Desenvolvedora</span>
-                        </div>
-                    </div> <!-- singel testimonial -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="singel-testimonial">
-                        <div class="testimonial-thum">
-                            <img src="images/testimonial/t-2.jpg" alt="Testimonial">
-                            <div class="quote">
-                                <i class="fa fa-quote-right"></i>
-                            </div>
-                        </div>
-                        <div class="testimonial-cont">
-                            <p>Aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet sem nibh id elit sollicitudirem </p>
-                            <h6>José Adauto</h6>
-                            <span>Desenvolvedor</span>
-                        </div>
-                    </div> <!-- singel testimonial -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="singel-testimonial">
-                        <div class="testimonial-thum">
-                            <img src="images/testimonial/t-3.jpg" alt="Testimonial">
-                            <div class="quote">
-                                <i class="fa fa-quote-right"></i>
-                            </div>
-                        </div>
-                        <div class="testimonial-cont">
-                            <p>Aliquetn sollicitudirem quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet sem nibh id elit sollicitudirem </p>
-                            <h6>Alexsandra Carvalho</h6>
-                            <span>Desenvolvedora</span>
-                        </div>
-                    </div> <!-- singel testimonial -->
-                </div>
-            </div> <!-- testimonial slied -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== TEASTIMONIAL PART ENDS ======-->
-   
     
    
     <!--====== PATNAR LOGO PART START ======-->

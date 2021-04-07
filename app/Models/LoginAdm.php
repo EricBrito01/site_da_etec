@@ -14,4 +14,7 @@ class LoginAdm extends Model
     ];
     protected $returnType = 'array';
     protected $primaryKey = 'login_id';
+
+
+    
 }

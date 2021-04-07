@@ -12,7 +12,7 @@
     <title>ETEC ERMELINDA GIANNINI TEIXEIRA</title>
     
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="images/all-icon/eicon.ico" type="image/png">
+    <link rel="shortcut icon" href="images/icon.ico" type="image/png">
 
     <!--====== Slick css ======-->
     <link rel="stylesheet" href="css/slick.css">

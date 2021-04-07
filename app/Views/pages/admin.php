@@ -20,12 +20,11 @@
           </div>
       
 
-          <form>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nome@dominio.com">
-            <input type="password" class="form-control" id="inputPassword" placeholder="Senha"><br>
+          <form action="./LoginAdmin/VerificaLogin" method="POST">
+            <input name="box_email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nome@dominio.com">
+            <input name="box_senha"type="password" class="form-control" id="inputPassword" placeholder="Senha"><br>
             <input type="submit" class="fadeIn fourth" value="Log In">
           </form>
-          
         <div id="formFooter">
             <a class="underlineHover" href="#">Esqueceu a senha?</a>
           </div>
