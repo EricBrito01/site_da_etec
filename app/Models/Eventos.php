@@ -15,5 +15,6 @@ class Eventos extends Model
         'eventos_data',
         'eventos_informacoes'
     ];
+    protected $returnType = 'array';
     
 }

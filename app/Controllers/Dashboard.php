@@ -1,6 +1,10 @@
 <?php
 namespace App\Controllers;
 
+//IMPORTANTE:
+// Nome do metodo + INT = Interface
+
+//-----------------------------------------------------------------------//
 class Dashboard extends BaseController
 {
     public function index()//Mostra a view do dashboard
@@ -50,5 +54,33 @@ class Dashboard extends BaseController
         $eventoModel->delete($this->request->getPost('box_id')); //Deleta a informação a partir do ID inserido
         return redirect()->to(base_url() . "/dashboard/ExcluiEventoInt"); //Retorna para o dashboard
         
+    }
+
+    public function CadastraCursoInt()
+    {
+        echo view('Templates/admheader');
+        echo view('dist/CursosView');
+        echo view('Templates/admfooter');
+    }
+
+  
+    public function CadastraCurso()
+    {
+        $data = [];
+        $data['msg'] = "";
+        $cursosModel = new \App\Models\Cursos();
+        if($this->request->getPost('box_curso'))
+        {
+            $data = [
+                'curso_nome' => $this->request->getPost('box_curso'),
+                'curso_descricao' => $this->request->getPost('box_descricao'),
+                'curso_horario' => $this->request->getPost('box_horario'),
+                'curso_horario_fim' => $this->request->getPost('box_fim'),
+                'curso_vagas' => $this->request->getPost('box_vagas')
+
+                   ];
+            $cursosModel->insert($data);
+        }
+       
     }
 }

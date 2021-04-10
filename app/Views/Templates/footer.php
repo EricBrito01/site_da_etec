@@ -24,16 +24,16 @@
                                 
                             </div>
                             <ul>
-                                <li><a href="http://localhost/etec/public"><i class="fa fa-angle-right"></i>Home</a></li>
-                                <li><a href="http://localhost/etec/public/about"><i class="fa fa-angle-right"></i>Sobre Nós</a></li>
-                                <li><a href="courses.html"><i class="fa fa-angle-right"></i>Cursos</a></li>
-                                <li><a href="http://localhost/etec/public/parcerias"><i class="fa fa-angle-right"></i>Parcerias</a></li>
-                                <li><a href="http://localhost/etec/public/events"><i class="fa fa-angle-right"></i>Evento</a></li>
+                                <li><a href="<?= base_url() ?>"><i class="fa fa-angle-right"></i>Home</a></li>
+                                <li><a href="<?= base_url() . "/about"?>"><i class="fa fa-angle-right"></i>Sobre Nós</a></li>
+                                <li><a href="<?= base_url() . "/courses"?>"><i class="fa fa-angle-right"></i>Cursos</a></li>
+                                <li><a href="<?= base_url() . "/parcerias"?>"><i class="fa fa-angle-right"></i>Parcerias</a></li>
+                                <li><a href="<?= base_url() . "/events"?>"><i class="fa fa-angle-right"></i>Evento</a></li>
                             </ul>
                             <ul>
-                                <li><a href="blog.html"><i class="fa fa-angle-right"></i>Administrativo</a></li>
+                                <li><a href="<?= base_url() . "/administrativo"?>"><i class="fa fa-angle-right"></i>Administrativo</a></li>
                                 <li><a href="Secretaria.html"><i class="fa fa-angle-right"></i>Secretaria</a></li>
-                                <li><a href="http://localhost/etec/public/contact"><i class="fa fa-angle-right"></i>Contato</a></li>
+                                <li><a href="<?= base_url() . "/contact"?>"><i class="fa fa-angle-right"></i>Contato</a></li>
                             </ul>
                         </div> <!-- footer link -->
                     </div>

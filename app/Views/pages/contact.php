@@ -51,35 +51,35 @@
                             <h2>Escreva para nós!</h2>
                         </div> <!-- section title -->
                         <div class="main-form pt-45">
-                            <form id="contact-form" action="#" method="post" data-toggle="validator">
+                            <form id="contact-form" action="./contact/sendEmail" method="post" data-toggle="validator">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="singel-form form-group">
-                                            <input name="name" type="text" placeholder="Your name" data-error="Name is required." required="required">
+                                            <input name="box_nome" type="text" placeholder="Seu nome" data-error="Nome obrigatório" required="required">
                                             <div class="help-block with-errors"></div>
                                         </div> <!-- singel form -->
                                     </div>
                                     <div class="col-md-6">
                                         <div class="singel-form form-group">
-                                            <input name="email" type="email" placeholder="Email" data-error="Valid email is required." required="required">
+                                            <input name="box_email" type="email" placeholder="Email" data-error="Colocar email valido" required="required">
                                             <div class="help-block with-errors"></div>
                                         </div> <!-- singel form -->
                                     </div>
                                     <div class="col-md-6">
                                         <div class="singel-form form-group">
-                                            <input name="subject" type="text" placeholder="Subject" data-error="Subject is required." required="required">
+                                            <input name="box_assunto" type="text" placeholder="Assunto" data-error="Assunto obrigatório" required="required">
                                             <div class="help-block with-errors"></div>
                                         </div> <!-- singel form --> 
                                     </div>
                                     <div class="col-md-6">
                                         <div class="singel-form form-group">
-                                            <input name="phone" type="text" placeholder="Phone" data-error="Phone is required." required="required">
+                                            <input name="box_telefone" type="text" placeholder="Phone" data-error="Telefone requirido" required="required">
                                             <div class="help-block with-errors"></div>
                                         </div> <!-- singel form -->
                                     </div>
                                     <div class="col-md-12">
                                         <div class="singel-form form-group">
-                                            <textarea name="messege" placeholder="Messege" data-error="Please,leave us a message." required="required"></textarea>
+                                            <textarea name="box_mensagem" placeholder="Messege" data-error="Por favor, nos enviar uma mensagem" required="required"></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div> <!-- singel form -->
                                     </div>

@@ -162,8 +162,8 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-4">
                         <div class="logo">
-                            <a href="http://localhost:8081/etec/public">
-                                <img src="images/etec.png" alt="Logo" width="150">
+                            <a href="<?= base_url()?>">
+                                <img src="images/logo.png" alt="Logo" width="160">
                             </a>
                         </div>
                     </div>
@@ -201,41 +201,32 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item">
-                                        <a class="active" href="http://localhost:8081/etec/public/">Home</a>
+                                        <a class="active" href="<?= base_url()?>">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="http://localhost:8081/etec/public/about">Sobre Nós</a>
+                                        <a href="<?= base_url() . "/about"?>">Sobre Nós</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="http://localhost:8081/etec/public/courses">Cursos</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="courses.html">Courses</a></li>
-                                            <li><a href="courses-singel.html">Course Singel</a></li>
-                                        </ul>
+                                        <a href="<?= base_url() . "/courses"?>">Cursos</a>
+                                
                                     </li>
                                     <li class="nav-item">
-                                        <a href="http://localhost:8081/etec/public/events">Eventos</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="events.html">Eventos</a></li>
-                                        </ul>
+                                        <a href="<?= base_url() . "/events"?>">Eventos</a>
+                                
                                     </li>
                                     <li class="nav-item">
-                                        <a href="http://localhost:8081/etec/public/parcerias">Parcerias</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="">Parcerias</a></li>
-                                        </ul>
+                                        <a href="<?= base_url() . "/parcerias"?>">Parcerias</a>
+                                    
                                     </li>
                                     <li class="nav-item">
-                                        <a href="blog.html">Administrativo</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog.html">Adm</a></li>
-                                        </ul>
+                                        <a href="<?= base_url() . "/administrativo"?>">Administrativo</a>
+                                    
                                     </li>
                                     <li class="nav-item">
                                         <a href="Secretaria.html">Secretaria</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="http://localhost:8081/etec/public/contact">Contato</a>
+                                        <a href="<?= base_url() . "/contact"?>">Contato</a>
                                     </li>
                                 </ul>
                             </div>
