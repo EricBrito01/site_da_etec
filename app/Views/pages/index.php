@@ -241,9 +241,7 @@
                                 <div class="name">
                                     <h6>Coordenadora - Luzia Gomes</h6>
                                 </div>
-                                <div class="admin">
-                                    
-                                </div>
+                                
                             </div>
                         </div>
                     </div> <!-- singel course -->
@@ -267,9 +265,7 @@
                                 <div class="name">
                                     <h6>Coordenadora - Luzia Gomes</h6>
                                 </div>
-                                <div class="admin">
-                                  
-                                </div>
+                               
                             </div>
                         </div>
                     </div> <!-- singel course -->
@@ -294,9 +290,7 @@
                                 <div class="name">
                                     <h6>Coordenador - Luiz Fernando</h6>
                                 </div>
-                                <div class="admin">
-                                    
-                                </div>
+                                
                             </div>
                         </div>
                     </div> <!-- singel course -->
@@ -320,9 +314,7 @@
                                 <div class="name">
                                    <h6>Coordenador - Caio Malheiro</h6>
                                 </div>
-                                <div class="admin">
-                                    
-                                </div>
+                                
                             </div>
                         </div>
                     </div> <!-- singel course -->

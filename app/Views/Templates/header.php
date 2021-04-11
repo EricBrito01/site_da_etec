@@ -12,72 +12,6 @@
     <title>ETEC ERMELINDA GIANNINI TEIXEIRA</title>
     
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="images/icon.ico" type="image/png">
-
-    <!--====== Slick css ======-->
-    <link rel="stylesheet" href="css/slick.css">
-
-    <!--====== Animate css ======-->
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <!--====== Nice Select css ======-->
-    <link rel="stylesheet" href="css/nice-select.css">
-    
-    <!--====== Nice Number css ======-->
-    <link rel="stylesheet" href="css/jquery.nice-number.min.css">
-
-    <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    <!--====== Fontawesome css ======-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    
-    <!--====== Default css ======-->
-    <link rel="stylesheet" href="css/default.css">
-    
-    <!--====== Style css ======-->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!--====== Responsive css ======-->
-    <link rel="stylesheet" href="css/responsive.css">
-  
-  
-</head>
-
-<body>
-   
-    <!--====== PRELOADER PART START ======-->
-    
-    <div class="preloader">
-        <div class="loader rubix-cube">
-            <div class="layer layer-1"></div>
-            <div class="layer layer-2"></div>
-            <div class="layer layer-3 color-1"></div>
-            <div class="layer layer-4"></div>
-            <div class="layer layer-5"></div>
-            <div class="layer layer-6"></div>
-            <div class="layer layer-7"></div>
-            <div class="layer layer-8"></div>
-        </div>
-    </div>
-    
-    <!--====== PRELOADER PART START ======-->
-    
-   
-   
-    <!--====== Required meta tags ======-->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!--====== Title ======-->
-    <title>ETEC ERMELINDA GIANNINI TEIXEIRA</title>
-    
-    <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
 
     <!--====== Slick css ======-->
@@ -99,7 +33,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     
     <!--====== Fontawesome css ======-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     
     <!--====== Default css ======-->
     <link rel="stylesheet" href="css/default.css">
@@ -111,7 +45,10 @@
     <link rel="stylesheet" href="css/responsive.css">
   
   
+  
 </head>
+
+
 
 <body>
    
@@ -242,24 +179,5 @@
                 </div> <!-- row -->
             </div> <!-- container -->
         </div>
-        
-    </header>
-    
-    <!--====== HEADER PART ENDS ======-->
    
-    <!--====== SEARCH BOX PART START ======-->
-    
-    <div class="search-box">
-        <div class="serach-form">
-            <div class="closebtn">
-                <span></span>
-                <span></span>
-            </div>
-            <form action="#">
-                <input type="text" placeholder="Search by keyword">
-                <button><i class="fa fa-search"></i></button>
-            </form>
-        </div> <!-- serach form -->
-    </div>
-    
-    
+   

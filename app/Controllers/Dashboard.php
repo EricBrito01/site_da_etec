@@ -77,10 +77,14 @@ class Dashboard extends BaseController
                 'curso_horario' => $this->request->getPost('box_horario'),
                 'curso_horario_fim' => $this->request->getPost('box_fim'),
                 'curso_vagas' => $this->request->getPost('box_vagas')
+                
 
                    ];
-            $cursosModel->insert($data);
-        }
-       
+            
+              $cursosModel->insert($data);
+ 
+                }
+
     }
+  
 }
