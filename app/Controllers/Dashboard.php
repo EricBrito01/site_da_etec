@@ -69,6 +69,13 @@ class Dashboard extends BaseController
         $data = [];
         $data['msg'] = "";
         $cursosModel = new \App\Models\Cursos();
+
+        $file = $this->request->getFile('box_foto');
+        if($file->isValid())
+        {
+            $file->move('upload/fotos_professores', $file->getRandomName());
+        }
+     
         if($this->request->getPost('box_curso'))
         {
             $data = [
@@ -76,15 +83,52 @@ class Dashboard extends BaseController
                 'curso_descricao' => $this->request->getPost('box_descricao'),
                 'curso_horario' => $this->request->getPost('box_horario'),
                 'curso_horario_fim' => $this->request->getPost('box_fim'),
-                'curso_vagas' => $this->request->getPost('box_vagas')
-                
+                'curso_vagas' => $this->request->getPost('box_vagas'),
+                'curso_professor_foto' => $file->getName(),
+                'curso_professor' => $this->request->getPost('box_professor')
 
                    ];
             
-              $cursosModel->insert($data);
+              if ($cursosModel->insert($data))
+              {
+                echo "<script> alert('Curso cadastrado!') </script>";
+                redirect()->to(base_url() . '/dashboard/CadastraCursoInt');
+              }
  
-                }
+        }
 
     }
-  
+
+    
+    public function CadastraParceirosInt()
+    {
+        echo view('Templates/admheader');
+        echo view('dist/ParceriasView');
+        echo view('Templates/admfooter');
+    }
+
+
+    public function CadastraParceiro()
+    {
+        $parceiroModel = new \App\Models\Parceiros();
+        $data = [];
+        $file = $this->request->getFile('box_foto');
+        if($file->isValid())
+        {
+            $file->move('upload/fotos_parcerias', $file->getRandomName());
+        }
+        if($this->request->getMethod() == "post")
+        {
+            $data = [
+                "parceiro_nome" => $this->request->getPost('box_parceiro'),
+                "parceiro_descricao" => $this->request->getPost('box_descricao'),
+                "parceiro_foto" => $file->getName()
+            ];
+            if($parceiroModel->insert($data))
+            {
+                echo "<script> alert('Parceiro cadastrado com sucesso')</script>";
+                redirect()->to(base_url() . '/dashboard/CadastraParceirosInt');
+            }
+        }
+    }
 }

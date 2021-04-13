@@ -162,8 +162,8 @@
                                 <div class="singel-event">
                                     <span><i class="fa fa-calendar"></i><?php echo $newsItem['eventos_data'] ?></span>
                                     <h4><?php echo $newsItem['eventos_titulo']?></h4>
-                                    <span><i class="fa fa-clock-o"></i><?php echo $newsItem['eventos_local']?></span>
-                                    <span><i class="fa fa-map-marker"></i> <?php echo $newsItem['eventos_informacoes']?></span>
+                                    <span><i class="fa fa-clock-o"></i><?php echo $newsItem['eventos_informacoes']?></span>
+                                    <span><i class="fa fa-map-marker"></i> <?php echo $newsItem['eventos_local']?></span>
                                 </div>
                             </li>
 
@@ -222,105 +222,35 @@
                 </div>
             </div> <!-- row -->
             <div class="row course-slied mt-30">
+                
+                <?php if($cursos): ?>
+                    <?php foreach($cursos as $curso): ?>
                 <div class="col-lg-4">
                     <div class="singel-course">
                         <div class="thum">
                             <div class="image">
                                 <img src="images/course/cu-1.jpg" alt="Course">
                             </div>
-                
-                        </div>
-                        <div class="cont">
-                            
-                            <span>(40 Vagas)</span>
-                            <a href="courses-singel.html"><h4>Etim - Administração Geral</h4></a>
-                            <div class="course-teacher">
-                                <div class="thum">
-                                    <a href="#"><img src="images/professores/luzia.jpeg" alt="teacher"></a>
-                                </div>
-                                <div class="name">
-                                    <h6>Coordenadora - Luzia Gomes</h6>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div> <!-- singel course -->
-                </div>
-                <div class="col-lg-4">
-                    <div class="singel-course">
-                        <div class="thum">
-                            <div class="image">
-                                <img src="images/course/cu-4.jpg" alt="Course">
-                            </div>
-                            
-                        </div>
-                        <div class="cont">
-                            
-                            <span>(40 vagas)</span>
-                            <a href="courses-singel.html"><h4>ETIM - Desenvolvimento de Sistemas</h4></a>
-                            <div class="course-teacher">
-                                <div class="thum">
-                                    <a href="#"><img src="images/professores/luzia.jpeg" alt="teacher"></a>
-                                </div>
-                                <div class="name">
-                                    <h6>Coordenadora - Luzia Gomes</h6>
-                                </div>
-                               
-                            </div>
-                        </div>
-                    </div> <!-- singel course -->
-                </div>
-                <div class="col-lg-4">
-                    <div class="singel-course">
-                        <div class="thum">
-                            <div class="image">
-                                <img src="images/course/cu-2.jpg" alt="Course">
-                            </div>
-                           
-                        </div>
-                        
-                        <div class="cont">
-                            
-                            <span>(40 Vagas)</span><br>
-                            <a href="courses-singel.html"><h4>Modular - Recursos humanos</h4></a>
-                            <div class="course-teacher">
-                                <div class="thum">
-                                    <a href="#"><img src="images/professores/fernando.jpg" alt="teacher"></a>
-                                </div>
-                                <div class="name">
-                                    <h6>Coordenador - Luiz Fernando</h6>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div> <!-- singel course -->
-                </div>
-                <div class="col-lg-4">
-                    <div class="singel-course">
-                        <div class="thum">
-                            <div class="image">
-                                <img src="images/course/cu-3.jpg" alt="Course">
-                            </div>
                             
                         </div>
                         <div class="cont">
                              
-                            <span>(40 Vagas)</span>
-                            <a href="courses-singel.html"><h4>Modular - Desenvolvimento de Sistemas</h4></a>
+                            <span>(<?= $curso['curso_vagas']?> Vagas)</span>
+                            <a href="<?= base_url() . '/courses'?>"><h4><?= $curso['curso_nome'] ?></h4></a>
                             <div class="course-teacher">
                                 <div class="thum">
-                                    <a href="#"><img src="images/professores/caio.jpg" alt="teacher"></a>
+                                   <img src="upload/fotos_professores/<?= $curso['curso_professor_foto']?>" alt="teacher">
                                 </div>
                                 <div class="name">
-                                   <h6>Coordenador - Caio Malheiro</h6>
+                                   <h6>Coordenador - <?= $curso['curso_professor'] ?></h6>
                                 </div>
                                 
                             </div>
                         </div>
                     </div> <!-- singel course -->
-                </div><br><br><br>
-                
-                
+                </div>
+                <?php endforeach; ?>
+                <?php endif; ?>
             </div> <!-- course slied -->
         </div> <!-- container -->
     </section>

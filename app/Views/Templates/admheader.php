@@ -50,7 +50,7 @@
                             <div class="sb-sidenav-menu-heading">Interface</div>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                                Eventos
+                                Cadastros/Exclusões
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
@@ -58,6 +58,8 @@
                                     <a class="nav-link" href="<?= base_url() . "/dashboard/CadastraEvento" ?>">Cadastrar Evento</a>
                                     <a class="nav-link" href="<?= base_url() . "/dashboard/ExcluiEventoInt" ?>">Excluir evento</a>
                                     <a class="nav-link" href="<?= base_url() . "/dashboard/CadastraCursoInt" ?>">Cadastrar Curso</a>
+                                    <a class="nav-link" href="<?= base_url() . "/dashboard/CadastraCursoInt" ?>">Excluir Curso</a>
+                                    <a class="nav-link" href="<?= base_url() . "/dashboard/CadastraParceirosInt" ?>">Cadastrar Parceiros</a>
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
@@ -84,7 +86,7 @@
                                     </a>
                                     <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
                                         <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="./index.php">Index Principal</a>
+                                            <a class="nav-link" href="<?= base_url()?>">Index Principal</a>
                                         </nav>
                                     </div>
                                 </nav>

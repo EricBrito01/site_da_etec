@@ -15,7 +15,9 @@ class Cursos extends Model
         'curso_horario',
         'curso_horario_fim',
         'curso_nome',
-        'curso_vagas'
+        'curso_vagas',
+        'curso_professor',
+        'curso_professor_foto'
 ];
 
    

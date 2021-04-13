@@ -7,8 +7,10 @@ class Courses extends BaseController
 {
     public function index()
     {
+        $cursoModel = new \App\Models\Cursos();
+        $data['cursos'] = $cursoModel->findAll();
         echo view('Templates/header');
-        echo view('pages/courses');
+        echo view('pages/courses', $data);
         echo view('Templates/footer');
     }
 

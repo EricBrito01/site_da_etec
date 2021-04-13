@@ -42,7 +42,7 @@
     
     <section id="teachers-page" class="pt-90 pb-120 gray-bg">
 
-        <legend>Nossas Ferramentas e Parcerias</legend>
+       
         <div class="container">
            <div class="row">
              <div class="col-lg-3 col-sm-6">
@@ -79,30 +79,27 @@
              
                </div>
            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-12">
-                     <nav class="courses-pagination mt-50">
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item">
-                                <a href="#" aria-label="Previous">
-                                    <i class="fa fa-angle-left"></i>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="active" href="#">1</a></li>
-                            <li class="page-item"><a href="#">2</a></li>
-                            <li class="page-item"><a href="#">3</a></li>
-                            <li class="page-item">
-                                <a href="#" aria-label="Next">
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>  <!-- courses pagination -->
-                </div>
-            </div>  <!-- row -->
         </div> <!-- container -->
     </section>
-    
+    <div class='row'>
+    <?php if($parceiros): ?>
+        <?php foreach($parceiros as $parceiro):?>
+     <div class='col-3'>
+
+        <div class='card'>
+            <img class="card-img-top" src="upload/fotos_parcerias/<?= $parceiro['parceiro_foto'] ?>" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><?= $parceiro['parceiro_nome'] ?></h5>
+                    <p class="card-text"><?= $parceiro['parceiro_descricao']?></p>
+                </div>
+            </div>
+
+        </div>
+
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </div>
+</div>
     <!--====== TEACHERS PART ENDS ======-->
    
    
