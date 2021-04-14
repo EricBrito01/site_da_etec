@@ -8,6 +8,8 @@ class Home extends Dashboard
 	{	
 		$eventosModel = new \App\Models\Eventos();
 		$cursosModel = new \App\Models\Cursos();
+		$imagensModel = new \App\Models\ImagensCarrosel();
+		$data['imagens'] = $imagensModel->findAll();
 		$data['news'] = $eventosModel->findAll();
 		$data['cursos'] = $cursosModel->findAll();
 		echo view('Templates/header');

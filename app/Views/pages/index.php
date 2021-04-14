@@ -4,15 +4,17 @@
     <!--====== SLIDER PART START ======-->
     
     <section id="slider-part" class="slider-active">
-        <div class="single-slider bg_cover pt-150" style="background-image: url(images/slider/s-1.jpg)" data-overlay="4">
+        <?php if($imagens):?>
+            <?php foreach($imagens as $imagem): ?>
+        <div class="single-slider bg_cover pt-150" style="background-image: url(upload/fotos_carrosel/<?= $imagem['imagem_nome']?>)" data-overlay="4">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-7 col-lg-9">
                         <div class="slider-cont">
-                            <h1 data-animation="bounceInLeft" data-delay="1s">BEM VINDO(A) A ETEC ERMELINDA GIANNINI TEIXEIRA</h1>
-                            <p data-animation="fadeInUp" data-delay="1.3s">CONFIRA OS NOSSOS CURSOS, DIREÇÃO ACADEMICA, RESULTADO DO VESTIBULINHO, E MUITO MAIS</p>
+                            <h1 data-animation="bounceInLeft" data-delay="1s"></h1>
+                            <p data-animation="fadeInUp" data-delay="1.3s"></p>
                             <ul>
-                                <li><a data-animation="fadeInUp" data-delay="1.6s" class="main-btn" href="http://localhost/etec/public/about">SOBRE A ESCOLA</a></li>
+                               
 
                             </ul>
                         </div>
@@ -20,38 +22,13 @@
                 </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- single slider -->
-        
-        <div class="single-slider bg_cover pt-150" style="background-image: url(images/slider/s-2.jpg)" data-overlay="4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-7 col-lg-9">
-                        <div class="slider-cont">
-                            <h1 data-animation="bounceInLeft" data-delay="1s">COM OS MELHORES PROFESSORES E DIRETORES PARA VOCE</h1>
-                            <p data-animation="fadeInUp" data-delay="1.3s">VENHA VER A NOSSA DIREÇÃO ACADEMICA!</p>
-                            <ul>
-                                <li><a data-animation="fadeInUp" data-delay="1.6s" class="main-btn" href="./about">Read More</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- single slider -->
-        
-        <div class="single-slider bg_cover pt-150" style="background-image: url(images/slider/s-3.jpg)" data-overlay="4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-7 col-lg-9">
-                        <div class="slider-cont">
-                            <h1 data-animation="bounceInLeft" data-delay="1s">VENHA TURBINAR O SEU CURRICULO !</h1>
-                            <p data-animation="fadeInUp" data-delay="1.3s">COM OS NOSSOS CURSOS PROFISSIONALIZANTES VOCE PODE TURBINAR SEU CURRICULO!</p>
-                            
-                        </div>
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- single slider -->
+        <?php endforeach; ?>
+       <?php endif;?>
     </section>
-    
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+
     <!--====== SLIDER PART ENDS ======-->
    
     <!--====== CATEGORY PART START ======-->

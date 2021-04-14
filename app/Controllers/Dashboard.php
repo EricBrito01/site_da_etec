@@ -3,6 +3,8 @@ namespace App\Controllers;
 
 //IMPORTANTE:
 // Nome do metodo + INT = Interface
+// INT = INTERFACE
+//CONTROLLERS FEITO BY: JOSÉ ADAUTO ALBARRAZ BARBOSA, ANO: 2021
 
 //-----------------------------------------------------------------------//
 class Dashboard extends BaseController
@@ -14,6 +16,58 @@ class Dashboard extends BaseController
         echo view('dist/index.html');
         echo view('Templates/admfooter');
     }
+
+//============================ CARROSEL =================================//
+    public function CadastraCarouselImagemInt()
+    {
+        echo view('Templates/admheader');
+        echo view('dist/ImagensCarrosel');
+        echo view('Templates/admfooter');
+    }
+
+    public function CadastraCarouselImagem()
+    {
+        $data = [];
+        $imagemModel = new \App\Models\ImagensCarrosel();
+        $file = $this->request->getFile('box_foto');
+        if($file->isValid())
+        {
+            $file->move('upload/fotos_carrosel', $file->getName());
+        }
+        if($this->request->getMethod() == "post")
+        {
+            $data = [
+                "imagem_nome" => $file->getName()
+            ];
+            
+            if($imagemModel->insert($data))
+            {
+                echo "<script> alert('Enviado com sucesso')</script>";
+                return redirect()->to(base_url() . '/dashboard/CadastraCarouselImagemInt');
+            }
+        }
+    }
+
+    public function ExcluiImagemCarouselInt()
+    {
+        $imagemModel = new \App\Models\ImagensCarrosel();
+        $data['tabela'] = $imagemModel->findAll();
+        echo view('Templates/admheader');
+        echo view('dist/ImagensCarroselExcluir',$data);
+        echo view('Templates/admfooter');
+    }
+
+
+    public function ExcluiImagemCarousel()
+    {
+        $imagemModel = new \App\Models\ImagensCarrosel();
+        $id = $this->request->getPost('box_id');
+        $imagemModel->delete($id);
+        return redirect()->to(base_url() . '/dashboard/ExcluiImagemCarouselInt');
+    }
+
+
+//============================ EVENTOS =================================//
 
     public function CadastraEvento()
     {
@@ -55,6 +109,7 @@ class Dashboard extends BaseController
         return redirect()->to(base_url() . "/dashboard/ExcluiEventoInt"); //Retorna para o dashboard
         
     }
+//============================ CURSOS =================================//
 
     public function CadastraCursoInt()
     {
@@ -99,7 +154,8 @@ class Dashboard extends BaseController
 
     }
 
-    
+//============================ PARCEIROS =================================//
+
     public function CadastraParceirosInt()
     {
         echo view('Templates/admheader');
@@ -127,7 +183,7 @@ class Dashboard extends BaseController
             if($parceiroModel->insert($data))
             {
                 echo "<script> alert('Parceiro cadastrado com sucesso')</script>";
-                redirect()->to(base_url() . '/dashboard/CadastraParceirosInt');
+                return redirect()->to(base_url() . '/dashboard/CadastraParceirosInt');
             }
         }
     }
