@@ -1,10 +1,10 @@
 <?php
 namespace App\Controllers;
 
-//IMPORTANTE:
+// IMPORTANTE:
 // Nome do metodo + INT = Interface
 // INT = INTERFACE
-//CONTROLLERS FEITO BY: JOSÉ ADAUTO ALBARRAZ BARBOSA, ANO: 2021
+
 
 //-----------------------------------------------------------------------//
 class Dashboard extends BaseController
@@ -147,10 +147,27 @@ class Dashboard extends BaseController
               if ($cursosModel->insert($data))
               {
                 echo "<script> alert('Curso cadastrado!') </script>";
-                redirect()->to(base_url() . '/dashboard/CadastraCursoInt');
+                return redirect()->to(base_url() . '/dashboard/CadastraCursoInt');
               }
  
         }
+
+    }
+
+    public function ExcluiCursoInt()
+    {
+        $cursosModel = new \App\Models\Cursos();
+        $data['cursos'] = $cursosModel->findAll();
+        echo view('Templates/admheader');
+        echo view('dist/ExcluiCurso', $data);
+        echo view('Templates/admfooter');
+    }
+
+    public function ExcluiCurso()
+    {
+        $cursosModel = new \App\Models\Cursos();
+        $cursosModel->delete($this->request->getPost('box_id'));
+        return redirect()->to(base_url() . '/dashboard/ExcluiCursoInt');
 
     }
 

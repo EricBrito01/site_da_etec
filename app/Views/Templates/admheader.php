@@ -60,7 +60,7 @@
                                     <a class="nav-link" href="<?= base_url() . "/dashboard/CadastraEvento" ?>">Cadastrar Evento</a>
                                     <a class="nav-link" href="<?= base_url() . "/dashboard/ExcluiEventoInt" ?>">Excluir evento</a>
                                     <a class="nav-link" href="<?= base_url() . "/dashboard/CadastraCursoInt" ?>">Cadastrar Curso</a>
-                                    <a class="nav-link" href="<?= base_url() . "/dashboard/CadastraCursoInt" ?>">Excluir Curso</a>
+                                    <a class="nav-link" href="<?= base_url() . "/dashboard/ExcluiCursoInt" ?>">Excluir Curso</a>
                                     <a class="nav-link" href="<?= base_url() . "/dashboard/CadastraParceirosInt" ?>">Cadastrar Parceiros</a>
                                 </nav>
                             </div>

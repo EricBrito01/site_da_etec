@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class Cursos extends Model
 {
     protected $table      = 'tb_cursos';
-    protected $primaryKey = 'cursos_id';
+    protected $primaryKey = 'curso_id';
 
     protected $returnType     = 'array';
 
