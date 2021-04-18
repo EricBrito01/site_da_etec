@@ -8,7 +8,7 @@ use CodeIgniter\Model;
 class Eventos extends Model
 {
     protected $table = 'tb_eventos';
-    protected $primaryKey = 'id';
+    protected $primaryKey = 'eventos_id';
     protected $allowedFields = [
         'eventos_local',
         'eventos_titulo',

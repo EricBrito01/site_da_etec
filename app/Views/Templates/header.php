@@ -160,7 +160,7 @@
                                     
                                     </li>
                                     <li class="nav-item">
-                                        <a href="Secretaria.html">Secretaria</a>
+                                        <a href="<?= base_url() . "/secretaria"?>">Secretaria</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="<?= base_url() . "/contact"?>">Contato</a>

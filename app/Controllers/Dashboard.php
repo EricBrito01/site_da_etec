@@ -4,10 +4,9 @@ namespace App\Controllers;
 // IMPORTANTE:
 // Nome do metodo + INT = Interface
 // INT = INTERFACE
-
-
 //-----------------------------------------------------------------------//
 class Dashboard extends BaseController
+
 {
     public function index()//Mostra a view do dashboard
     {
@@ -204,4 +203,6 @@ class Dashboard extends BaseController
             }
         }
     }
+
+    
 }

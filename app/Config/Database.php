@@ -34,7 +34,7 @@ class Database extends Config
 		'DSN'      => '',
 		'hostname' => 'localhost',
 		'username' => 'root',
-		'password' => '200101',
+		'password' => '',
 		'database' => 'bd_etec',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
