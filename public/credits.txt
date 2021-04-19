@@ -1,9 +1,11 @@
 Desenvolvido pela turma de DS de 2021
 
 
+Lideres:
 Jose Adauto Albarraz Barbosa 
 Andressa Cristina Passos Santos 
 Arnaldo Carreiro 
+///////////////////////////////
 Kaique Ananias
 Alexsandra Carvalho
 Gabriel Galupo

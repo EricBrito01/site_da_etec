@@ -223,5 +223,18 @@ class Dashboard extends BaseController
         }
     }
 
-    
+//============================ USUARIOS =================================//
+    public function CadastraUsuarioInt()
+    {
+        echo view('Templates/admheader');
+        echo view('dist/CadastroDeUsuario');
+        echo view('Templates/admfooter'); 
+    }
+
+    public function MudarSenhaInt()
+    {
+        echo view('Templates/admheader');
+        echo view('dist/MudarSenha');
+        echo view('Templates/admfooter'); 
+    }
 }
