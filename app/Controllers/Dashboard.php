@@ -237,4 +237,26 @@ class Dashboard extends BaseController
         echo view('dist/MudarSenha');
         echo view('Templates/admfooter'); 
     }
+
+    public function CadastraUsuario()
+    {
+        $loginModel = new \App\Models\LoginAdm();
+        $data = array();
+        if($this->request->getMethod() == "post")
+        {
+            if($this->request->getPost('box_pass') == $this->request->getPost('box_pass2'))
+            {
+                $data = [
+                    'login_email' => $this->request->getPost('box_email'),
+                    'login_senha' => $this->request->getPost('box_pass'),
+                    'login_nome' => $this->request->getPost('box_nome')
+                ];
+
+                $retorno = ($loginModel->insert($data)) ? "<script> alert('Usuario cadastrado com sucesso'); window.location.href='./CadastraUsuarioInt' </script>" : "Nao cadastrado";
+                echo $retorno;
+            }else{
+                echo "<script> alert('ERRO: AS SENHAS NAO ESTAO IGUAIS'); window.location.href='./CadastraUsuarioInt' </script>";
+            }
+        }
+    }
 }

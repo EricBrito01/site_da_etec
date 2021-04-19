@@ -86,7 +86,7 @@
                                            <img src="upload/fotos_professores/<?= $curso['curso_professor_foto']?>" alt="teacher">
                                         </div>
                                         <div class="name">
-                                            <a href="#"><h6><?= $curso['curso_professor'] ?></h6></a>
+                                           <h6><?= $curso['curso_professor'] ?></h6>
                                         </div>
                                         <div class="admin">
                                             <ul>

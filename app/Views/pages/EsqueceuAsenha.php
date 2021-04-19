@@ -22,7 +22,7 @@
 
           <form action="./EsqueceuAsenha/VerificaEmail" method="POST">
             <input name="box_email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nome@dominio.com">
-            <input type="submit" class="fadeIn fourth" value="Log In">
+            <input type="submit" class="fadeIn fourth" value="Enviar Email">
           </form>
       
         </div>
