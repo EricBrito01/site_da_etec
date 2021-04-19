@@ -1,7 +1,3 @@
-<?php
-
-use App\Controllers\EsqueceuAsenha;
-?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -17,21 +13,17 @@ use App\Controllers\EsqueceuAsenha;
     <div class="wrapper fadeInDown">
         <div id="formContent">
   
-          <h2 class="active"> Logar-se no sistema </h2>
+          <h2 class="active"> Recuperar a senha </h2>
       
           <div class="fadeIn first">
             <img src="images/user_icon.jpg" id="icon" alt="User Icon" />
           </div>
       
 
-          <form action="./LoginAdmin/VerificaLogin" method="POST">
+          <form action="./EsqueceuAsenha/VerificaEmail" method="POST">
             <input name="box_email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nome@dominio.com">
-            <input name="box_senha"type="password" class="form-control" id="inputPassword" placeholder="Senha"><br>
             <input type="submit" class="fadeIn fourth" value="Log In">
           </form>
-        <div id="formFooter">
-            <a class="underlineHover" href="<?= base_url() . '/EsqueceuAsenha'?>">Esqueceu a senha?</a>
-          </div>
       
         </div>
       </div>

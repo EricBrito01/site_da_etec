@@ -15,7 +15,7 @@ class Contact extends BaseController
     {
        $email = \Config\Services::email();
        $email->setFrom('etechelper@gmail.com', 'Helper Site Etec');
-       $email->setTo('mateusalbarraz6@gmail.com');
+       $email->setTo('joseadauto923@gmail.com');
        $email->setSubject("Nome: " . $this->request->getPost('box_nome') . ", Email de: " . $this->request->getPost('box_email') . ", " . $this->request->getPost('box_assunto'));
        $email->setMessage($this->request->getPost('box_mensagem'));
        if (!$email->send())

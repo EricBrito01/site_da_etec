@@ -62,6 +62,8 @@
                                     <a class="nav-link" href="<?= base_url() . "/dashboard/CadastraCursoInt" ?>">Cadastrar Curso</a>
                                     <a class="nav-link" href="<?= base_url() . "/dashboard/ExcluiCursoInt" ?>">Excluir Curso</a>
                                     <a class="nav-link" href="<?= base_url() . "/dashboard/CadastraParceirosInt" ?>">Cadastrar Parceiros</a>
+                                    <a class="nav-link" href="<?= base_url() . "/dashboard/ExcluiParceiroInt" ?>">Excluir Parceiros</a>
+
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">

@@ -204,5 +204,24 @@ class Dashboard extends BaseController
         }
     }
 
+    public function ExcluiParceiroInt()
+    {
+        $parceiroModel = new \App\Models\Parceiros();
+        $data['parceiros'] = $parceiroModel->findAll();
+        echo view('Templates/admheader');
+        echo view('dist/ExcluiParceiros', $data);
+        echo view('Templates/admfooter');
+        
+    }
+
+    public function ExcluiParceiro()
+    {
+        $parceiroModel = new \App\Models\Parceiros();
+        if($parceiroModel->delete($this->request->getPost('box_id')));
+        {
+            return redirect()->to(base_url() . '/dashboard/ExcluiParceiroInt');
+        }
+    }
+
     
 }
