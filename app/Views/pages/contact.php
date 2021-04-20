@@ -73,13 +73,13 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="singel-form form-group">
-                                            <input name="box_telefone" type="text" placeholder="Phone" data-error="Telefone requirido" required="required">
+                                            <input name="box_telefone" type="text" placeholder="Telefone" data-error="Telefone requirido" required="required">
                                             <div class="help-block with-errors"></div>
                                         </div> <!-- singel form -->
                                     </div>
                                     <div class="col-md-12">
                                         <div class="singel-form form-group">
-                                            <textarea name="box_mensagem" placeholder="Messege" data-error="Por favor, nos enviar uma mensagem" required="required"></textarea>
+                                            <textarea name="box_mensagem" placeholder="Mensagem" data-error="Por favor, nos enviar uma mensagem" required="required"></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div> <!-- singel form -->
                                     </div>

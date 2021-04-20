@@ -259,4 +259,22 @@ class Dashboard extends BaseController
             }
         }
     }
+
+    public function MudarSenha()
+    {
+        $loginModel = new \App\Models\LoginAdm();
+        $atual = $loginModel->where('login_senha', $this->request->getPost('box_atual'))->first();
+        $email = $loginModel->where('login_email', $this->request->getPost('box_email'))->first();
+
+        if(!is_null($atual) && !is_null($email))
+        {
+            $loginModel->set('login_senha', $this->request->getPost('box_nova'));
+            $loginModel->where('login_email', $this->request->getPost('box_email'));
+            $loginModel->update();
+            echo "<script> alert('SENHA ATUALIZADA COM SUCESSO'); window.location.href='./MudarSenhaInt'; </script>";
+        }else{
+            echo "<script> alert('ERRO: SENHA OU EMAIL INEXISTENTE'); window.location.href='./MudarSenhaInt'; </script>";
+
+        }
+    }
 }
