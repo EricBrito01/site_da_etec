@@ -8,7 +8,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-about mt-40">
                             <div class="logo">
-                                <a href="#"><img src="images/cps.png" alt="Logo" width="150"></a>
+                                <a href="https://www.cps.sp.gov.br/"><img src="images/cps.png" alt="Logo" width="150"></a>
                             </div>
                         
                             <ul class="mt-20">
@@ -32,7 +32,7 @@
                             </ul>
                             <ul>
                                 <li><a href="<?= base_url() . "/administrativo"?>"><i class="fa fa-angle-right"></i>Administrativo</a></li>
-                                <li><a href="Secretaria.html"><i class="fa fa-angle-right"></i>Secretaria</a></li>
+                                <li><a href="<?= base_url() . "/secretaria"?>"><i class="fa fa-angle-right"></i>Secretaria</a></li>
                                 <li><a href="<?= base_url() . "/contact"?>"><i class="fa fa-angle-right"></i>Contato</a></li>
                             </ul>
                         </div> <!-- footer link -->

@@ -10,9 +10,9 @@ class Dashboard extends BaseController
 {
     public function index()//Mostra a view do dashboard
     {
-        
+    
         echo view('Templates/admheader');
-        echo view('dist/index.html');
+        echo view('dist/index');
         echo view('Templates/admfooter');
     }
 
@@ -274,7 +274,6 @@ class Dashboard extends BaseController
             echo "<script> alert('SENHA ATUALIZADA COM SUCESSO'); window.location.href='./MudarSenhaInt'; </script>";
         }else{
             echo "<script> alert('ERRO: SENHA OU EMAIL INEXISTENTE'); window.location.href='./MudarSenhaInt'; </script>";
-
         }
     }
 }
