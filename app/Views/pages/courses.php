@@ -74,7 +74,7 @@
                             <div class="singel-course mt-30">
                                 <div class="thum">
                                     <div class="image">
-                                        <img src="images/course/cu-1.jpg" alt="Course">
+                                        <img src="upload/capas_cursos/<?= $curso['curso_capa']?>" alt="Course">
                                     </div>
                                 </div>
                                 <div class="cont">

@@ -27,6 +27,8 @@
                                 </div>
                               </div> 
                               Foto coordenador:<input type="file" name="box_foto" accept="image/png, image/jpeg"><br><br>
+                              Capa do curso:<input type="file" name="box_capa" accept="image/png, image/jpeg"><br><br>
+
                               <label name="dt-inicio" style="text-align: left; "  class="col-sm-12 control-label"> Nome professor </label>
                                 <div class="col-sm-12">
                                     <div style="width: 200px; left: 100px; top: -32px; margin-left: 15px" class="input-group date">

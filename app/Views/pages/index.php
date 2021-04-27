@@ -206,7 +206,7 @@
                     <div class="singel-course">
                         <div class="thum">
                             <div class="image">
-                                <img src="images/course/cu-1.jpg" alt="Course">
+                                <img src="upload/capas_cursos/<?= $curso['curso_capa']?>" alt="Course">
                             </div>
                             
                         </div>

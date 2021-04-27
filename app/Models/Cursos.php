@@ -17,7 +17,8 @@ class Cursos extends Model
         'curso_nome',
         'curso_vagas',
         'curso_professor',
-        'curso_professor_foto'
+        'curso_professor_foto',
+        'curso_capa'
 ];
 
    

@@ -124,8 +124,10 @@ class Dashboard extends BaseController
         $cursosModel = new \App\Models\Cursos();
 
         $file = $this->request->getFile('box_foto');
-        if($file->isValid())
-        {
+        $capa = $this->request->getFile('box_capa');
+        if($file->isValid() && $capa->isValid())
+        {   
+            $capa->move('upload/capas_cursos', $capa->getRandomName());
             $file->move('upload/fotos_professores', $file->getRandomName());
         }
      
@@ -138,7 +140,8 @@ class Dashboard extends BaseController
                 'curso_horario_fim' => $this->request->getPost('box_fim'),
                 'curso_vagas' => $this->request->getPost('box_vagas'),
                 'curso_professor_foto' => $file->getName(),
-                'curso_professor' => $this->request->getPost('box_professor')
+                'curso_professor' => $this->request->getPost('box_professor'),
+                'curso_capa' => $capa->getName(),
 
                    ];
             
