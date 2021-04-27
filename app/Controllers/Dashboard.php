@@ -50,17 +50,16 @@ class Dashboard extends BaseController
     public function ExcluiImagemCarouselInt()
     {
         $imagemModel = new \App\Models\ImagensCarrosel();
-        $data['tabela'] = $imagemModel->findAll();
+        $data['imagens'] = $imagemModel->findAll();
         echo view('Templates/admheader');
         echo view('dist/ImagensCarroselExcluir',$data);
         echo view('Templates/admfooter');
     }
 
 
-    public function ExcluiImagemCarousel()
+    public function ExcluiImagemCarousel($id)
     {
         $imagemModel = new \App\Models\ImagensCarrosel();
-        $id = $this->request->getPost('box_id');
         $imagemModel->delete($id);
         return redirect()->to(base_url() . '/dashboard/ExcluiImagemCarouselInt');
     }
@@ -101,11 +100,11 @@ class Dashboard extends BaseController
         echo view('Templates/admfooter');
     }
 
-    public function ExcluiEvento()
+    public function ExcluiEvento($id)
     {
-        $eventoModel = new \App\Models\Eventos(); //Instancia classe Eventos
-        $eventoModel->delete($this->request->getPost('box_id')); //Deleta a informação a partir do ID inserido
-        return redirect()->to(base_url() . "/dashboard/ExcluiEventoInt"); //Retorna para o dashboard
+        $eventoModel = new \App\Models\Eventos(); 
+        $eventoModel->delete($id);
+        return redirect()->to(base_url() . "/dashboard/ExcluiEventoInt"); 
         
     }
 //============================ CURSOS =================================//
@@ -162,10 +161,10 @@ class Dashboard extends BaseController
         echo view('Templates/admfooter');
     }
 
-    public function ExcluiCurso()
+    public function ExcluiCurso($id)
     {
         $cursosModel = new \App\Models\Cursos();
-        $cursosModel->delete($this->request->getPost('box_id'));
+        $cursosModel->delete($id);
         return redirect()->to(base_url() . '/dashboard/ExcluiCursoInt');
 
     }
@@ -214,13 +213,12 @@ class Dashboard extends BaseController
         
     }
 
-    public function ExcluiParceiro()
+    public function ExcluiParceiro($id)
     {
         $parceiroModel = new \App\Models\Parceiros();
-        if($parceiroModel->delete($this->request->getPost('box_id')));
-        {
-            return redirect()->to(base_url() . '/dashboard/ExcluiParceiroInt');
-        }
+        $parceiroModel->delete($id);
+        return redirect()->to(base_url() . '/dashboard/ExcluiParceiroInt');
+        
     }
 
 //============================ USUARIOS =================================//

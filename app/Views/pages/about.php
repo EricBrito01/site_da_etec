@@ -38,7 +38,7 @@
                 </div> <!-- about cont -->
                 <div class="col-lg-7">
                     <div class="about-image mt-50">
-                        <img src="images/about/about-2.jpg" alt="About">
+                        <img src="images/etecSN.jpg" alt="About">
                     </div>  <!-- about imag -->
                 </div> 
             </div> <!-- row -->
