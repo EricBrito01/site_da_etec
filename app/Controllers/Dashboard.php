@@ -12,7 +12,7 @@ class Dashboard extends BaseController
     {
     
         echo view('Templates/admheader');
-        echo view('dist/index');
+        echo view('admpage/index');
         echo view('Templates/admfooter');
     }
 
@@ -20,7 +20,7 @@ class Dashboard extends BaseController
     public function CadastraCarouselImagemInt()
     {
         echo view('Templates/admheader');
-        echo view('dist/ImagensCarrosel');
+        echo view('admpage/ImagensCarrosel');
         echo view('Templates/admfooter');
     }
 
@@ -52,7 +52,7 @@ class Dashboard extends BaseController
         $imagemModel = new \App\Models\ImagensCarrosel();
         $data['imagens'] = $imagemModel->findAll();
         echo view('Templates/admheader');
-        echo view('dist/ImagensCarroselExcluir',$data);
+        echo view('admpage/ImagensCarroselExcluir',$data);
         echo view('Templates/admfooter');
     }
 
@@ -86,7 +86,7 @@ class Dashboard extends BaseController
            
         }
         echo view('Templates/admheader');
-        echo view('dist/eventos', $data);
+        echo view('admpage/eventos', $data);
         echo view('Templates/admfooter');
     }
 
@@ -96,7 +96,7 @@ class Dashboard extends BaseController
         $eventoModel = new \App\Models\Eventos();
         $data['eventos'] = $eventoModel->findAll();
         echo view('Templates/admheader');
-        echo view('dist/ExcluiEvento',$data);
+        echo view('admpage/ExcluiEvento',$data);
         echo view('Templates/admfooter');
     }
 
@@ -112,7 +112,7 @@ class Dashboard extends BaseController
     public function CadastraCursoInt()
     {
         echo view('Templates/admheader');
-        echo view('dist/CursosView');
+        echo view('admpage/CursosView');
         echo view('Templates/admfooter');
     }
 
@@ -157,7 +157,7 @@ class Dashboard extends BaseController
         $cursosModel = new \App\Models\Cursos();
         $data['cursos'] = $cursosModel->findAll();
         echo view('Templates/admheader');
-        echo view('dist/ExcluiCurso', $data);
+        echo view('admpage/ExcluiCurso', $data);
         echo view('Templates/admfooter');
     }
 
@@ -174,7 +174,7 @@ class Dashboard extends BaseController
     public function CadastraParceirosInt()
     {
         echo view('Templates/admheader');
-        echo view('dist/ParceriasView');
+        echo view('admpage/ParceriasView');
         echo view('Templates/admfooter');
     }
 
@@ -208,7 +208,7 @@ class Dashboard extends BaseController
         $parceiroModel = new \App\Models\Parceiros();
         $data['parceiros'] = $parceiroModel->findAll();
         echo view('Templates/admheader');
-        echo view('dist/ExcluiParceiros', $data);
+        echo view('admpage/ExcluiParceiros', $data);
         echo view('Templates/admfooter');
         
     }
@@ -225,14 +225,14 @@ class Dashboard extends BaseController
     public function CadastraUsuarioInt()
     {
         echo view('Templates/admheader');
-        echo view('dist/CadastroDeUsuario');
+        echo view('admpage/CadastroDeUsuario');
         echo view('Templates/admfooter'); 
     }
 
     public function MudarSenhaInt()
     {
         echo view('Templates/admheader');
-        echo view('dist/MudarSenha');
+        echo view('admpage/MudarSenha');
         echo view('Templates/admfooter'); 
     }
 
