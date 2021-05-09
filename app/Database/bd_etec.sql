@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 27/04/2021 às 23:00
+-- Tempo de geração: 09-Maio-2021 às 04:29
 -- Versão do servidor: 10.4.18-MariaDB
--- Versão do PHP: 8.0.3
+-- versão do PHP: 8.0.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,10 +24,22 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tb_cursos`
+-- Estrutura da tabela `tb_chamada`
 --
 create database bd_etec;
 use bd_etec;
+CREATE TABLE `tb_chamada` (
+  `chamada_id` int(11) NOT NULL,
+  `chamada_titulo` varchar(128) NOT NULL,
+  `chamada_link` varchar(256) NOT NULL,
+  `chamada_data` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `tb_cursos`
+--
 
 CREATE TABLE `tb_cursos` (
   `curso_id` int(11) NOT NULL,
@@ -42,7 +54,7 @@ CREATE TABLE `tb_cursos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Despejando dados para a tabela `tb_cursos`
+-- Extraindo dados da tabela `tb_cursos`
 --
 
 INSERT INTO `tb_cursos` (`curso_id`, `curso_nome`, `curso_horario`, `curso_horario_fim`, `curso_professor_foto`, `curso_descricao`, `curso_professor`, `curso_capa`, `curso_vagas`) VALUES
@@ -53,7 +65,7 @@ INSERT INTO `tb_cursos` (`curso_id`, `curso_nome`, `curso_horario`, `curso_horar
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tb_eventos`
+-- Estrutura da tabela `tb_eventos`
 --
 
 CREATE TABLE `tb_eventos` (
@@ -65,16 +77,17 @@ CREATE TABLE `tb_eventos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Despejando dados para a tabela `tb_eventos`
+-- Extraindo dados da tabela `tb_eventos`
 --
 
 INSERT INTO `tb_eventos` (`eventos_id`, `eventos_local`, `eventos_titulo`, `eventos_data`, `eventos_informacoes`) VALUES
-(17, 'Etec Ermelinda', 'PRIMEIRO REMAKE SITE DA ETEC', '2021-04-20', '				\r\n   PRIMEIRO REMAKE                         ');
+(17, 'Etec Ermelinda', 'PRIMEIRO REMAKE SITE DA ETEC', '2021-04-20', '				\r\n   PRIMEIRO REMAKE                         '),
+(18, 'teste', 'Teste', '4441-02-04', 'teste				\r\n                            ');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tb_imagens`
+-- Estrutura da tabela `tb_imagens`
 --
 
 CREATE TABLE `tb_imagens` (
@@ -83,7 +96,7 @@ CREATE TABLE `tb_imagens` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Despejando dados para a tabela `tb_imagens`
+-- Extraindo dados da tabela `tb_imagens`
 --
 
 INSERT INTO `tb_imagens` (`imagem_id`, `imagem_nome`) VALUES
@@ -92,7 +105,7 @@ INSERT INTO `tb_imagens` (`imagem_id`, `imagem_nome`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tb_login`
+-- Estrutura da tabela `tb_login`
 --
 
 CREATE TABLE `tb_login` (
@@ -103,7 +116,7 @@ CREATE TABLE `tb_login` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Despejando dados para a tabela `tb_login`
+-- Extraindo dados da tabela `tb_login`
 --
 
 INSERT INTO `tb_login` (`login_id`, `login_nome`, `login_email`, `login_senha`) VALUES
@@ -113,7 +126,7 @@ INSERT INTO `tb_login` (`login_id`, `login_nome`, `login_email`, `login_senha`) 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `tb_parceiros`
+-- Estrutura da tabela `tb_parceiros`
 --
 
 CREATE TABLE `tb_parceiros` (
@@ -124,7 +137,7 @@ CREATE TABLE `tb_parceiros` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Despejando dados para a tabela `tb_parceiros`
+-- Extraindo dados da tabela `tb_parceiros`
 --
 
 INSERT INTO `tb_parceiros` (`parceiro_id`, `parceiro_nome`, `parceiro_foto`, `parceiro_descricao`) VALUES
@@ -135,38 +148,50 @@ INSERT INTO `tb_parceiros` (`parceiro_id`, `parceiro_nome`, `parceiro_foto`, `pa
 --
 
 --
--- Índices de tabela `tb_cursos`
+-- Índices para tabela `tb_chamada`
+--
+ALTER TABLE `tb_chamada`
+  ADD PRIMARY KEY (`chamada_id`);
+
+--
+-- Índices para tabela `tb_cursos`
 --
 ALTER TABLE `tb_cursos`
   ADD PRIMARY KEY (`curso_id`);
 
 --
--- Índices de tabela `tb_eventos`
+-- Índices para tabela `tb_eventos`
 --
 ALTER TABLE `tb_eventos`
   ADD PRIMARY KEY (`eventos_id`);
 
 --
--- Índices de tabela `tb_imagens`
+-- Índices para tabela `tb_imagens`
 --
 ALTER TABLE `tb_imagens`
   ADD PRIMARY KEY (`imagem_id`);
 
 --
--- Índices de tabela `tb_login`
+-- Índices para tabela `tb_login`
 --
 ALTER TABLE `tb_login`
   ADD PRIMARY KEY (`login_id`);
 
 --
--- Índices de tabela `tb_parceiros`
+-- Índices para tabela `tb_parceiros`
 --
 ALTER TABLE `tb_parceiros`
   ADD PRIMARY KEY (`parceiro_id`);
 
 --
--- AUTO_INCREMENT para tabelas despejadas
+-- AUTO_INCREMENT de tabelas despejadas
 --
+
+--
+-- AUTO_INCREMENT de tabela `tb_chamada`
+--
+ALTER TABLE `tb_chamada`
+  MODIFY `chamada_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de tabela `tb_cursos`
@@ -178,7 +203,7 @@ ALTER TABLE `tb_cursos`
 -- AUTO_INCREMENT de tabela `tb_eventos`
 --
 ALTER TABLE `tb_eventos`
-  MODIFY `eventos_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `eventos_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT de tabela `tb_imagens`
