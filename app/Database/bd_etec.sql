@@ -26,6 +26,8 @@ SET time_zone = "+00:00";
 --
 -- Estrutura para tabela `tb_cursos`
 --
+create database bd_etec;
+use bd_etec;
 
 CREATE TABLE `tb_cursos` (
   `curso_id` int(11) NOT NULL,

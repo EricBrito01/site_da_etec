@@ -196,6 +196,7 @@ class Dashboard extends BaseController
             $data = [
                 "parceiro_nome" => $this->request->getPost('box_parceiro'),
                 "parceiro_descricao" => $this->request->getPost('box_descricao'),
+                "parceiro_link" => $this->request->getPost('box_link'),
                 "parceiro_foto" => $file->getName()
             ];
             if($parceiroModel->insert($data))
@@ -276,5 +277,40 @@ class Dashboard extends BaseController
         }else{
             echo "<script> alert('ERRO: SENHA OU EMAIL INEXISTENTE'); window.location.href='./MudarSenhaInt'; </script>";
         }
+    }
+
+//============================ CHAMADA VESTIBULINHO =================================//
+
+    public function ChamadaInt()
+    {
+        echo view('Templates/admheader');
+        echo view('admpage/ChamadaVestibulinho');
+        echo view('Templates/admfooter');
+    }
+
+    public function CadastraChamada()
+    {
+        $chamadaModel = new \App\Models\Chamada();
+        $chamadaModel->insert([
+            "chamada_titulo" => $this->request->getPost('box_titulo'),
+            "chamada_link" => $this->request->getPost('box_link'), 
+            "chamada_data" => date('y.m.d')
+        ]);
+        return redirect()->to(base_url() . '/dashboard/ChamadaInt');
+    }
+
+    public function ExcluiChamadaInt()
+    {
+        $chamadaModel = new \App\Models\Chamada();
+        $data['chamadas'] = $chamadaModel->findAll();
+        echo view('Templates/admheader');
+        echo view('admpage/ExcluiChamada', $data);
+        echo view('Templates/admfooter');
+    }
+    public function ExcluiChamada($id)
+    {
+        $chamadaModel = new \App\Models\Chamada();
+        $chamadaModel->delete($id);
+        return redirect()->to(base_url() . '/dashboard/ExcluiChamadaInt');
     }
 }

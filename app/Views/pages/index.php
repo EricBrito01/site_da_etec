@@ -164,24 +164,34 @@
     <!--====== APPLY PART START ======-->
     
     <section id="apply-aprt" class="pb-120">
+   
         <div class="container">
+       
             <div class="apply">
+            
                 <div class="row no-gutters">
-                    <div class="col-lg-6">
+                <?php if($chamadas): ?>
+                        <?php foreach($chamadas as $chamada): ?>
+                    <div class="col-lg-6" style="padding-left: 11px; padding-top: 9px;">
+                    
                         <div class="apply-cont apply-color-1">
-                            <h3>Primeira chamada do vestibulinho</h3>
-                            <a href="https://www.vestibulinhoetec.com.br/classificacao-aptidao-1a-chamada/" class="main-btn">Clique para ver mais</a>
+                            <h3><?= $chamada['chamada_titulo'] ?></h3>
+                            <a href="<?= $chamada['chamada_link']?>" class="main-btn">Clique para ver mais</a>
                         </div> <!-- apply cont -->
+                       
                     </div>
-                    <div class="col-lg-6">
-                        <div class="apply-cont apply-color-2">
-                            <h3>Segunda chamada do vestibulinho</h3>
-                            <a href="https://www.vestibulinhoetec.com.br/classificacao-aptidao-2a-chamada/" class="main-btn">Clique para ver mais</a>
-                        </div> <!-- apply cont -->
+                    <?php endforeach; ?>
+                    <?php endif; ?>
+                       
                     </div> 
+                   
                 </div>
+               
             </div> <!-- row -->
+           
+            
         </div> <!-- container -->
+       
     </section>
     
     <!--====== APPLY PART ENDS ======-->
@@ -290,13 +300,8 @@
         <div class="feature-bg"></div> <!-- feature bg -->
     </section><br><br><br><br><br><br><br><br><br><br><br><br>
     
-    <!--====== VIDEO FEATURE PART ENDS ======-->
-   
-   
-   
-   
-    
-    
+
+
    
     <!--====== PATNAR LOGO PART START ======-->
     

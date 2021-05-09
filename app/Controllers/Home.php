@@ -9,6 +9,8 @@ class Home extends BaseController
 		$eventosModel = new \App\Models\Eventos();
 		$cursosModel = new \App\Models\Cursos();
 		$imagensModel = new \App\Models\ImagensCarrosel();
+		$chamadaModel = new \App\Models\Chamada();
+		$data['chamadas'] = $chamadaModel->findAll();
 		$data['imagens'] = $imagensModel->findAll();
 		$data['news'] = $eventosModel->findAll();
 		$data['cursos'] = $cursosModel->findAll();

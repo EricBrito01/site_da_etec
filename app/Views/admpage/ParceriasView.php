@@ -5,6 +5,8 @@
                         <h1>Cadastro de Parceiros </h1>
                         <form action="./CadastraParceiro" method="POST" enctype="multipart/form-data">
                             Nome do Parceiro: <input for="nome-event" class="field" name="box_parceiro" placeholder="EX: Microsoft" size="35"><br><br>
+                            Link da parceria: <input for="nome-event" class="field" name="box_link" placeholder="EX: www.microsoft.com" size="35"><br><br>
+
             
                             Logo/foto:<input type="file" name="box_foto" accept="image/png, image/jpeg"><br><br>
 

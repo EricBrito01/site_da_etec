@@ -89,7 +89,7 @@
         <div class='card'>
             <img class="card-img-top" src="upload/fotos_parcerias/<?= $parceiro['parceiro_foto'] ?>" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title"><?= $parceiro['parceiro_nome'] ?></h5>
+                    <a href="<?= "https://" . $parceiro['parceiro_link']?>"><h5 class="card-title"><?= $parceiro['parceiro_nome'] ?></h5></a>
                     <p class="card-text"><?= $parceiro['parceiro_descricao']?></p>
                 </div>
             </div>

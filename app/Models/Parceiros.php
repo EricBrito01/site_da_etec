@@ -12,6 +12,7 @@ class Parceiros extends Model
     protected $allowedFields = [
         'parceiro_nome',
         'parceiro_foto',
-        'parceiro_descricao'
+        'parceiro_descricao',
+        'parceiro_link'
     ];
 }

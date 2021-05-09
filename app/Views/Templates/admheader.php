@@ -63,6 +63,10 @@
                                     <a class="nav-link" href="<?= base_url() . "/dashboard/ExcluiCursoInt" ?>">Excluir Curso</a>
                                     <a class="nav-link" href="<?= base_url() . "/dashboard/CadastraParceirosInt" ?>">Cadastrar Parceiros</a>
                                     <a class="nav-link" href="<?= base_url() . "/dashboard/ExcluiParceiroInt" ?>">Excluir Parceiros</a>
+                                    <a class="nav-link" href="<?= base_url() . "/dashboard/ChamadaInt" ?>">Anunciar Chamada vestibulinho</a>
+                                    <a class="nav-link" href="<?= base_url() . "/dashboard/ExcluiChamadaInt" ?>">Excluir Chamada vestibulinho</a>
+
+
 
                                 </nav>
                             </div>
