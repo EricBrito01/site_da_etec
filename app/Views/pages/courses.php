@@ -80,7 +80,7 @@
                                 <div class="cont">
                                    <h4><?= $curso['curso_nome']?></h4><br>
                                    <span><i class="fa fa-clock-o"></i><?=  $curso['curso_horario']?> - <?= $curso['curso_horario_fim']?></span><hr>
-                                   <h6><?= $curso['curso_descricao']?></h6>
+                                   <p><?= $curso['curso_descricao']?></p>
                                     <div class="course-teacher">
                                         <div class="thum">
                                            <img src="upload/fotos_professores/<?= $curso['curso_professor_foto']?>" alt="teacher">
