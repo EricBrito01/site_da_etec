@@ -125,3 +125,7 @@ nb-configuration.xml
 /phpunit*.xml
 /.phpunit.*.cache
 
+# minhas configs(eric)
+app/Config/Database.php
+app/Config/App.php
+app/Config/App.php
