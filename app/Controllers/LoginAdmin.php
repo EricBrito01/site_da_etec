@@ -17,13 +17,14 @@ class LoginAdmin extends BaseController
         $loginModel = new \App\Models\LoginAdm();
         $email = $this->request->getPost('box_email');
         $result = $loginModel->where('login_email', $email)->first();
-        $result2 = $loginModel->where('login_senha', $this->request->getPost('box_senha'))->first();
+        $result2 = $loginModel->where('login_senha', md5($this->request->getPost('box_senha')))->first();
 
         if(is_null($result) || is_null($result2))
         {
             echo "<script> alert('ERRO: USUARIO INEXISTENTE'); window.location.href='../LoginAdmin'; </script>";
         }else{
-
+            session_start();
+            $_SESSION['usuario'] =  md5($email); 
             return redirect()->to(base_url() . "/dashboard");
 
         }

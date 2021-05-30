@@ -1,22 +1,31 @@
 <?php
+
 namespace App\Controllers;
 
 // IMPORTANTE:
 // Nome do metodo + INT = Interface
 // INT = INTERFACE
 //-----------------------------------------------------------------------//
+
+
 class Dashboard extends BaseController
 
 {
-    public function index()//Mostra a view do dashboard
+
+
+    public function index() //Mostra a view do dashboard
     {
-    
-        echo view('Templates/admheader');
-        echo view('admpage/index');
-        echo view('Templates/admfooter');
+        session_start();
+        if (isset($_SESSION['usuario'])) {
+            echo view('Templates/admheader');
+            echo view('admpage/index');
+            echo view('Templates/admfooter');
+        }else{
+            return redirect()->to(base_url() . "/LoginAdmin");
+        }
     }
 
-//============================ CARROSEL =================================//
+    //============================ CARROSEL =================================//
     public function CadastraCarouselImagemInt()
     {
         echo view('Templates/admheader');
@@ -29,18 +38,15 @@ class Dashboard extends BaseController
         $data = [];
         $imagemModel = new \App\Models\ImagensCarrosel();
         $file = $this->request->getFile('box_foto');
-        if($file->isValid())
-        {
+        if ($file->isValid()) {
             $file->move('upload/fotos_carrosel', $file->getName());
         }
-        if($this->request->getMethod() == "post")
-        {
+        if ($this->request->getMethod() == "post") {
             $data = [
                 "imagem_nome" => $file->getName()
             ];
-            
-            if($imagemModel->insert($data))
-            {
+
+            if ($imagemModel->insert($data)) {
                 echo "<script> alert('Enviado com sucesso')</script>";
                 return redirect()->to(base_url() . '/dashboard/CadastraCarouselImagemInt');
             }
@@ -52,7 +58,7 @@ class Dashboard extends BaseController
         $imagemModel = new \App\Models\ImagensCarrosel();
         $data['imagens'] = $imagemModel->findAll();
         echo view('Templates/admheader');
-        echo view('admpage/ImagensCarroselExcluir',$data);
+        echo view('admpage/ImagensCarroselExcluir', $data);
         echo view('Templates/admfooter');
     }
 
@@ -65,15 +71,14 @@ class Dashboard extends BaseController
     }
 
 
-//============================ EVENTOS =================================//
+    //============================ EVENTOS =================================//
 
     public function CadastraEvento()
     {
         $eventoModel = new \App\Models\Eventos();
         $data = [];
         $data['msg'] = "";
-        if($this->request->getPost('box_titulo'))
-        {
+        if ($this->request->getPost('box_titulo')) {
             $data = [
                 'eventos_titulo' => $this->request->getPost('box_titulo'),
                 'eventos_informacoes' => $this->request->getPost('box_informacoes'),
@@ -83,7 +88,6 @@ class Dashboard extends BaseController
             ];
 
             $data['msg'] = ($eventoModel->insert($data)) ? "Enviado com sucesso!" : "Não enviado";
-           
         }
         echo view('Templates/admheader');
         echo view('admpage/eventos', $data);
@@ -91,23 +95,22 @@ class Dashboard extends BaseController
     }
 
 
-    public function ExcluiEventoInt()//Mostra o exclui evento com uma tabela e coisas cadastradas no banco
+    public function ExcluiEventoInt() //Mostra o exclui evento com uma tabela e coisas cadastradas no banco
     {
         $eventoModel = new \App\Models\Eventos();
         $data['eventos'] = $eventoModel->findAll();
         echo view('Templates/admheader');
-        echo view('admpage/ExcluiEvento',$data);
+        echo view('admpage/ExcluiEvento', $data);
         echo view('Templates/admfooter');
     }
 
     public function ExcluiEvento($id)
     {
-        $eventoModel = new \App\Models\Eventos(); 
+        $eventoModel = new \App\Models\Eventos();
         $eventoModel->delete($id);
-        return redirect()->to(base_url() . "/dashboard/ExcluiEventoInt"); 
-        
+        return redirect()->to(base_url() . "/dashboard/ExcluiEventoInt");
     }
-//============================ CURSOS =================================//
+    //============================ CURSOS =================================//
 
     public function CadastraCursoInt()
     {
@@ -116,7 +119,7 @@ class Dashboard extends BaseController
         echo view('Templates/admfooter');
     }
 
-  
+
     public function CadastraCurso()
     {
         $data = [];
@@ -125,14 +128,12 @@ class Dashboard extends BaseController
 
         $file = $this->request->getFile('box_foto');
         $capa = $this->request->getFile('box_capa');
-        if($file->isValid() && $capa->isValid())
-        {   
+        if ($file->isValid() && $capa->isValid()) {
             $capa->move('upload/capas_cursos', $capa->getRandomName());
             $file->move('upload/fotos_professores', $file->getRandomName());
         }
-     
-        if($this->request->getPost('box_curso'))
-        {
+
+        if ($this->request->getPost('box_curso')) {
             $data = [
                 'curso_nome' => $this->request->getPost('box_curso'),
                 'curso_descricao' => $this->request->getPost('box_descricao'),
@@ -143,16 +144,13 @@ class Dashboard extends BaseController
                 'curso_professor' => $this->request->getPost('box_professor'),
                 'curso_capa' => $capa->getName(),
 
-                   ];
-            
-              if ($cursosModel->insert($data))
-              {
+            ];
+
+            if ($cursosModel->insert($data)) {
                 echo "<script> alert('Curso cadastrado!') </script>";
                 return redirect()->to(base_url() . '/dashboard/CadastraCursoInt');
-              }
- 
+            }
         }
-
     }
 
     public function ExcluiCursoInt()
@@ -169,10 +167,9 @@ class Dashboard extends BaseController
         $cursosModel = new \App\Models\Cursos();
         $cursosModel->delete($id);
         return redirect()->to(base_url() . '/dashboard/ExcluiCursoInt');
-
     }
 
-//============================ PARCEIROS =================================//
+    //============================ PARCEIROS =================================//
 
     public function CadastraParceirosInt()
     {
@@ -187,20 +184,17 @@ class Dashboard extends BaseController
         $parceiroModel = new \App\Models\Parceiros();
         $data = [];
         $file = $this->request->getFile('box_foto');
-        if($file->isValid())
-        {
+        if ($file->isValid()) {
             $file->move('upload/fotos_parcerias', $file->getRandomName());
         }
-        if($this->request->getMethod() == "post")
-        {
+        if ($this->request->getMethod() == "post") {
             $data = [
                 "parceiro_nome" => $this->request->getPost('box_parceiro'),
                 "parceiro_descricao" => $this->request->getPost('box_descricao'),
                 "parceiro_link" => $this->request->getPost('box_link'),
                 "parceiro_foto" => $file->getName()
             ];
-            if($parceiroModel->insert($data))
-            {
+            if ($parceiroModel->insert($data)) {
                 echo "<script> alert('Parceiro cadastrado com sucesso')</script>";
                 return redirect()->to(base_url() . '/dashboard/CadastraParceirosInt');
             }
@@ -214,7 +208,6 @@ class Dashboard extends BaseController
         echo view('Templates/admheader');
         echo view('admpage/ExcluiParceiros', $data);
         echo view('Templates/admfooter');
-        
     }
 
     public function ExcluiParceiro($id)
@@ -222,41 +215,38 @@ class Dashboard extends BaseController
         $parceiroModel = new \App\Models\Parceiros();
         $parceiroModel->delete($id);
         return redirect()->to(base_url() . '/dashboard/ExcluiParceiroInt');
-        
     }
 
-//============================ USUARIOS =================================//
+    //============================ USUARIOS =================================//
     public function CadastraUsuarioInt()
     {
         echo view('Templates/admheader');
         echo view('admpage/CadastroDeUsuario');
-        echo view('Templates/admfooter'); 
+        echo view('Templates/admfooter');
     }
 
     public function MudarSenhaInt()
     {
         echo view('Templates/admheader');
         echo view('admpage/MudarSenha');
-        echo view('Templates/admfooter'); 
+        echo view('Templates/admfooter');
     }
 
     public function CadastraUsuario()
     {
         $loginModel = new \App\Models\LoginAdm();
         $data = array();
-        if($this->request->getMethod() == "post")
-        {
-            if($this->request->getPost('box_pass') == $this->request->getPost('box_pass2'))
-            {
+        if ($this->request->getMethod() == "post") {
+            if ($this->request->getPost('box_pass') == $this->request->getPost('box_pass2')) {
                 $data = [
                     'login_email' => $this->request->getPost('box_email'),
-                    'login_senha' => $this->request->getPost('box_pass'),
+                    'login_senha' => md5($this->request->getPost('box_pass')),
                     'login_nome' => $this->request->getPost('box_nome')
                 ];
 
                 $retorno = ($loginModel->insert($data)) ? "<script> alert('Usuario cadastrado com sucesso'); window.location.href='./CadastraUsuarioInt' </script>" : "Nao cadastrado";
                 echo $retorno;
-            }else{
+            } else {
                 echo "<script> alert('ERRO: AS SENHAS NAO ESTAO IGUAIS'); window.location.href='./CadastraUsuarioInt' </script>";
             }
         }
@@ -268,18 +258,17 @@ class Dashboard extends BaseController
         $atual = $loginModel->where('login_senha', $this->request->getPost('box_atual'))->first();
         $email = $loginModel->where('login_email', $this->request->getPost('box_email'))->first();
 
-        if(!is_null($atual) && !is_null($email))
-        {
+        if (!is_null($atual) && !is_null($email)) {
             $loginModel->set('login_senha', $this->request->getPost('box_nova'));
             $loginModel->where('login_email', $this->request->getPost('box_email'));
             $loginModel->update();
             echo "<script> alert('SENHA ATUALIZADA COM SUCESSO'); window.location.href='./MudarSenhaInt'; </script>";
-        }else{
+        } else {
             echo "<script> alert('ERRO: SENHA OU EMAIL INEXISTENTE'); window.location.href='./MudarSenhaInt'; </script>";
         }
     }
 
-//============================ CHAMADA VESTIBULINHO =================================//
+    //============================ CHAMADA VESTIBULINHO =================================//
 
     public function ChamadaInt()
     {
@@ -293,7 +282,7 @@ class Dashboard extends BaseController
         $chamadaModel = new \App\Models\Chamada();
         $chamadaModel->insert([
             "chamada_titulo" => $this->request->getPost('box_titulo'),
-            "chamada_link" => $this->request->getPost('box_link'), 
+            "chamada_link" => $this->request->getPost('box_link'),
             "chamada_data" => date('y.m.d')
         ]);
         return redirect()->to(base_url() . '/dashboard/ChamadaInt');
